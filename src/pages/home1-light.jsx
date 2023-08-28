@@ -52,11 +52,11 @@ const Homepage = () => {
     <>
     <Head>
         <title>
-        eComXelerators | Strategic Consulting and Amazon Marketing Agency
+        AA Growth Grid | Strategic Consulting and Amazon Marketing Agency
         </title>
         <meta
           name="description"
-          content="I’m a front-end web developer specializing in building (and occasionally designing) exceptional digital experiences."
+          content="AA Growth Grid Strategic Consulting and Amazon Marketing Agency. We Specialize in Amazon Wholesale."
         />
         {/* <link legacyBehavior rel="icon" href="/fav.png" /> */}
       </Head>

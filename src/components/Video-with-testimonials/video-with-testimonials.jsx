@@ -74,7 +74,7 @@ const VideoWithTestimonials = () => {
                   <div className="item">
                     <p>
                       The greatest benefit I have seen so far since working with
-                      eComXelerators; I have freed up a lot of my time so I can
+                      AA Growth Grid; I have freed up a lot of my time so I can
                       focus on the parts of my business that need my direct
                       attention, which will enable growth.
                     </p>
