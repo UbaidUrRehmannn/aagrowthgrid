@@ -1,10 +1,10 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Script from "next/script";
 import loadingPace from "../../common/loadingPace";
 import appData from "../../data/app.json";
 
 const LoadingScreen = () => {
-  React.useEffect(() => {
+  useEffect(() => {
     let bodyEl = document.querySelector("body");
     if (appData.showLoading) {
       loadingPace();
