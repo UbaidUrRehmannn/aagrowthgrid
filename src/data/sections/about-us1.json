@@ -1,8 +1,9 @@
 {
   "id": 1,
-  "smallTitle": "About Us",
-  "title": "Why chose us:",
-  "content": "AA Growth Grid is a one stop strategic consulting and Amazon marketing agency assisting clients on and off Amazon. The company aims to help small business owners and online brands that are struggling to keep up with the massive changes in the market maximize their potential as well as expand their reach and scale with amazon marketing and full service account management.",
+  "smallTitle": "What We Do",
+  "title": "Help you scale your business on Amazon",
+  "paragraphOne": "At AA Growth Grid, we're your partners in conquering Amazon's dynamic landscape. Our specialized expertise in Amazon FBA Wholesale empowers 3rd party sellers and brands with strategies that elevate their product sourcing, inventory management, and sales optimization. With a proven track record of propelling businesses to the forefront of Amazon's bustling marketplace, we're your roadmap to Amazon FBA Wholesale mastery.",
+  "paragraphTwo": "We're not just consultants; we're your brand's voice, strategy, and growth catalyst. Our dedication to boosting brands' sales and visibility on Amazon is unwavering. Through a blend of data-driven insights, strategic optimizations, and targeted marketing techniques, we craft a narrative that resonates with your brand's ethos and captivates your target audience.",
   "image": "/img/about-us.jpg",
   "stauts": [
     { "id": 1, "number": "3", "letter": "K", "stautsName": "Happy Clients" },

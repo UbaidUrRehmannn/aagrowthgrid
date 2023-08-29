@@ -2,8 +2,9 @@
   {
     "id": 1,
     "icon": "pe-7s-paint-bucket",
-    "image": "/img/service-1.svg",
-    "title": "Amazon Marketing Services:",
+    "image": "/img/partners/Partner-1.jpg",
+    "title": "3rd Party Sellers",
+    "description": "We are your strategic partners in navigating the dynamic world of Amazon FBA wholesale. We provide comprehensive support, from product sourcing and inventory management to optimized listings and robust marketing strategies. Our goal is to empower 3rd party sellers with the tools and insights they need to stand out, compete effectively, and achieve sustainable growth within the Amazon ecosystem.",
     "content": [
       "Amazon SEO.",
       "Advertising & PPC For amazon.",
@@ -17,8 +18,9 @@
   {
     "id": 2,
     "icon": "pe-7s-phone",
-    "image": "/img/service-2.svg",
-    "title": "Brand Management Services:",
+    "image": "/img/partners/Partner-2.png",
+    "title": "Brands",
+    "description": "Unlock the full potential of your brand on Amazon with our tailored strategies and dedicated support. We specialize in boosting brand visibility, enhancing product listings, and implementing targeted advertising campaigns. Our mission is to showcase your brand's unique value, drive sales, and build a lasting presence in the competitive Amazon marketplace. Let us be your partner in achieving remarkable results and expanding your brand's reach.",
     "content": [
       "Finding Profitable Products.",
       "Product Launches.",
