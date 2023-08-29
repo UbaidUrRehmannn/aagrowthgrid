@@ -1663,6 +1663,7 @@ span:hover {
 /* ====================== [ End Heading ] ====================== */
 /* ====================== [  Start Button Style ] ====================== */
 .butn {
+  cursor: pointer !important;
   padding: 15px 35px;
   font-size: 16px;
   font-weight: 600;

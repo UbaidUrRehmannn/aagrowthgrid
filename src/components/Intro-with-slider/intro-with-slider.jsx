@@ -88,8 +88,8 @@ const IntroWithSlider = ({ sliderRef }) => {
                     <div className="row justify-content-center">
                       <div className="col-lg-8 col-md-10">
                         <div className="caption center mt-30">
-                          <h2 className="color-font">{slide.title}</h2>
-                          {slide?.content && <p>{slide.content}</p>}
+                          <h2 className="color-font text-capitalize">{slide.title}</h2>
+                          {slide?.content && <p className="text-capitalize">{slide.content}</p>}
                           <Link href="/about-us">
                             <a className="butn bord curve mt-30">
                               <span>REQUEST A CALLBACK</span>

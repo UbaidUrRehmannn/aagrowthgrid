@@ -9,6 +9,7 @@ import Numbers from "../components/Numbers/numbers";
 import Testimonials from "../components/Testimonials/testimonials";
 import VideoWithTestimonials from "../components/Video-with-testimonials/video-with-testimonials";
 import SkillsCircle from "../components/Skills-circle/skills-circle";
+import Cards from "../components/Cards/cards";
 import Clients from "../components/Clients/clients";
 import Blogs1 from "../components/blogs/Blogs1/blogs1";
 import appData from "../data/app.json";
@@ -56,7 +57,7 @@ const Homepage = () => {
         </title>
         <meta
           name="description"
-          content="AA Growth Grid Strategic Consulting and Amazon Marketing Agency. We Specialize in Amazon Wholesale."
+          content="AA Growth Grid Strategic Consulting and Amazon Marketing Agency. We Specialize in Amazon Wholesale.We accelorates Amazon Sellers and brands to new heights"
         />
         {/* <link legacyBehavior rel="icon" href="/fav.png" /> */}
       </Head>
@@ -64,17 +65,18 @@ const Homepage = () => {
       <Navbar nr={navbarRef} lr={logoRef} />
       <IntroWithSlider sliderRef={fixedSlider} />
       <div ref={MainContent} className="main-content">
+        <Cards />
         <AboutUs />
         <Services />
-        {/* <Works /> */}
-        {/* <Testimonials /> */}
+        <Works />
+        <Testimonials />
         <Numbers />
         <VideoWithTestimonials />
-        {/* <SkillsCircle theme="light" /> */}
-        {/* <div style={{marginTop: "4rem"}}>
+        <SkillsCircle theme="light" />
+        <div style={{marginTop: "4rem"}}>
         <Clients theme="light" />
 
-        </div> */}
+        </div>
         <div style={{ marginTop: "4rem" }}>
           <CallToAction />
         </div>
