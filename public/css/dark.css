@@ -4871,6 +4871,52 @@ span:hover {
 }
 
 /* ====================== [ End services ] ====================== */
+/* ====================== [ Start partners ] ====================== */
+.partners-item-box {
+  padding: 50px 30px !important;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  height: 100%;
+}
+.partners-item-box:hover {
+  /* background-color: #f7f7f7; */
+  box-shadow: 0px 20px 30px 0px #c1c3c4;
+}
+.partners-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 3rem;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.partners-image:hover {
+  filter: brightness(80%);
+}
+/* ====================== [ End partners ] ====================== */
+/* ====================== [ Start home-services ] ====================== */
+.home-services-item-box {
+  padding: 50px 30px !important;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  height: 100%;
+}
+.home-services-item-box:hover {
+  /* background-color: #f7f7f7; */
+  box-shadow: 0px 20px 30px 0px #c1c3c4;
+}
+.home-services-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 3rem;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.home-services-image:hover {
+  filter: brightness(80%);
+}
+/* ====================== [ End home-services ] ====================== */
 /* ====================== [ Start brands ] ====================== */
 .clients .brands:hover img {
   -webkit-transform: scale(0);
