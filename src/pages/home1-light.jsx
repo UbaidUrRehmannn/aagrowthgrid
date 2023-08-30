@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar/navbar";
 import Head from "next/head";
 import IntroWithSlider from "../components/Intro-with-slider/intro-with-slider";
+import IntroWithVideo from "../components/Intro-with-video/Intro-with-video";
 import AboutUs from "../components/About-us/about-us";
 import Services from "../components/Services/services";
 import Works from "../components/Works/works";
@@ -66,6 +67,7 @@ const Homepage = () => {
     <LightTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
       <IntroWithSlider sliderRef={fixedSlider} />
+      <IntroWithVideo sliderRef={fixedSlider} />
       <div ref={MainContent} className="main-content">
         <Cards />
         <AboutUs />

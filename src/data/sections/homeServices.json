@@ -1,63 +1,45 @@
 [
   {
     "id": 1,
+    "icon": "pe-7s-paint-bucket",
     "image": "/img/service-2.svg",
-    "title": "Fix Existing Ad Campaigns",
-    "content1": "Your sponsored product listings are the key to sales. If they're not pulling their weight, they're useless. We fully optimize your listings before we push traffic to them."
+    "title": "Data-Driven Strategies for Success",
+    "content1": "Success on Amazon isn't accidental; it's meticulously orchestrated. Our data-driven strategies are the compass that guides your journey. We dive deep into market trends, competitor analysis, and consumer behavior to craft strategies that position your products for maximum impact. With us, your decisions are backed by data, and your actions are aligned with Amazon success."
   },
-
   {
     "id": 2,
+    "icon": "pe-7s-phone",
     "image": "/img/service-2.svg",
-    "title": "Build Customized PPC Strategies",
-    "content1": "We know that no two businesses are the same, which is why we create individual sponsored ad campaigns catered to your brands needs."
+    "title": "Market Penetration and Positioning",
+    "content1": "Entering the Amazon landscape requires finesse. Our market penetration strategies ensure your products break through the clutter, capturing the attention of your potential customers. We're not just about listing; we're about positioning – placing your brand in the spotlight where it belongs."
   },
   {
     "id": 3,
     "image": "/img/service-2.svg",
-    "title": "Maximize ROAS",
-    "content1": "We make tweaks to your sponsored ad campaigns to increase the return you get on your ad spend and reduce overall costs."
+    "icon": "pe-7s-paint-bucket",
+    "title": "Holistic Brand Growth",
+    "content1": "Our approach isn't just about boosting sales; it's about holistic brand growth. We sculpt your Amazon presence with attention to detail, curating a brand image that resonates across every touchpoint. From your product listings to your brand store, we're your architects of Amazon brand resonance."
   },
   {
     "id": 4,
+    "icon": "pe-7s-phone",
     "image": "/img/service-2.svg",
-    "title": "Improve Organic Ranking",
-    "content1": "Magic doesn't happen overnight. We constantly track, tweak, measure, and optimize your PPC campaigns to reduce ACOS and make sure all sponsored ads are performing at their best."
+    "title": "Sales Optimization and Scalability",
+    "content1": "Sales optimization isn't a one-time endeavor; it's a continuous evolution. Our strategies not only boost current sales but pave the way for scalable growth. We're your partners in amplifying conversions, enhancing listings, and navigating the algorithms that dictate Amazon's dynamics."
   },
   {
     "id": 5,
+    "icon": "pe-7s-paint-bucket",
     "image": "/img/service-2.svg",
-    "title": "Analyze and Monitor Campaigns",
-    "content1": "We make tweaks to your sponsored ad campaigns to increase the return you get on your ad spend and reduce overall costs."
+    "title": "Collaborate for Amazon Triumph",
+    "content1": "Every brand has a unique story to tell, and we're here to amplify yours. Let's collaborate, aligning our expertise with your brand's aspirations. Your Amazon journey is our priority, and together, we'll craft a saga of triumph that sets your brand apart."
   },
+
   {
     "id": 6,
+    "icon": "pe-7s-phone",
     "image": "/img/service-2.svg",
-    "title": "Manage All Amazon Sponsored Ads",
-    "content1": "We oversee the entire PPC campaign process from start to finish and help you create high-converting sponsored product ads, sponsored brand ads, product display ads, and video ads"
-  },
-  {
-    "id": 7,
-    "image": "/img/service-2.svg",
-    "title": "Identify Incremental Sales Opportunities",
-    "content1": "We dig into your data and find key components that can be optimized to increase sales.."
-  },
-  {
-    "id": 8,
-    "image": "/img/service-2.svg",
-    "title": "Reduce ACOS, Improve ROI",
-    "content1": "We'll run a health check on your existing PPC campaigns to gain insight on what's working and what's not before starting new campaigns."
-  },
-  {
-    "id": 9,
-    "image": "/img/service-2.svg",
-    "title": "Building a Sustainable Brand",
-    "content1": "Sustainability begins with optimizing your product listings and identifying relevant and profitable traffic to send to your sponsored product campaigns."
-  },
-  {
-    "id": 10,
-    "image": "/img/service-2.svg",
-    "title": "Increase Sales & Scalability",
-    "content1": "We know what makes sponsored product listings convert. Not only do we ensure your PPC campaigns are reaching the right people, but we optimize your product pages to improve ranking, relevancy and brand scalability."
+    "title": "Experience the Difference",
+    "content1": "Discover the AA Growth Grid difference – where Amazon expertise, strategic insight, and dedication converge to drive results. Join us in igniting Amazon triumph, and let's script a success story that stands the test of time."
   }
 ]

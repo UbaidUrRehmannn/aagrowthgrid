@@ -39,13 +39,14 @@ const HomeServices = ({ style, lines }) => {
                   : ".9"
               }s`}
             >
-              <div className="item-box home-services-item-box">
-                {/* <div>
-                  <img className="services-image" src={feature.image} />
-                </div> */}
-                <div className="cont">
+              <div className="item-box home-services-item-box d-flex">
+                <div className="d-flex align-items-center">
+                  {/* <img className="services-image" src={feature.image} /> */}
+                  <span className={`icon ${feature.icon}`}></span>
+                </div>
+                <div className="cont pl-4">
                   <h6>{feature.title}</h6>
-                  <p>{feature.content1}</p>
+                  <p className="text-justify">{feature.content1}</p>
                 </div>
               </div>
             </div>
