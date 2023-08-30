@@ -67,7 +67,7 @@ const Homepage = () => {
     <LightTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
       <IntroWithSlider sliderRef={fixedSlider} />
-      <IntroWithVideo sliderRef={fixedSlider} />
+      {/* <IntroWithVideo sliderRef={fixedSlider} /> */}
       <div ref={MainContent} className="main-content">
         <Cards />
         <AboutUs />
