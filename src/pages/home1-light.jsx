@@ -18,7 +18,7 @@ import LightTheme from "../layouts/Light";
 import Cards from "../components/Cards/cards";
 import HomeServices from "../components/Home-services/HomeServices";
 import VideoBackground from "../components/video-background/video-background";
-
+import HomeVideoSection from "../data/sections/introVideo.json"
 
 const Homepage = () => {
   const fixedSlider = React.useRef(null);
@@ -54,7 +54,7 @@ const Homepage = () => {
   }, [fixedSlider, MainContent, navbarRef]);
   return (
     <>
-    <Head>
+      <Head>
         <title>
         AA Growth Grid | Strategic Consulting and Amazon Marketing Agency
         </title>
@@ -64,31 +64,31 @@ const Homepage = () => {
         />
         {/* <link legacyBehavior rel="icon" href="/fav.png" /> */}
       </Head>
-    <LightTheme>
-      <Navbar nr={navbarRef} lr={logoRef} />
-      {/* <IntroWithSlider sliderRef={fixedSlider} /> */}
-      <VideoBackground sliderRef={fixedSlider} />
-      <div ref={MainContent} className="main-content">
-        <Cards />
-        <AboutUs />
-        <Numbers />
-        <HomeServices />
-        {/* <Services /> */}
-        {/* <Works /> */}
-        {/* <Testimonials /> */}
-        <VideoWithTestimonials />
-        {/* <SkillsCircle theme="light" /> */}
-        {/* <div style={{marginTop: "4rem"}}>
-        <Clients theme="light" />
+      <LightTheme>
+        <Navbar nr={navbarRef} lr={logoRef} />
+        {/* <IntroWithSlider sliderRef={fixedSlider} /> */}
+        <VideoBackground sliderRef={fixedSlider} data={HomeVideoSection}/>
+        <div ref={MainContent} className="main-content">
+          <Cards />
+          <AboutUs />
+          <Numbers />
+          <HomeServices />
+          {/* <Services /> */}
+          {/* <Works /> */}
+          {/* <Testimonials /> */}
+          <VideoWithTestimonials />
+          {/* <SkillsCircle theme="light" /> */}
+          {/* <div style={{marginTop: "4rem"}}>
+          <Clients theme="light" />
 
-        </div> */}
-        <div style={{ marginTop: "4rem" }}>
-          <CallToAction />
+          </div> */}
+          <div style={{ marginTop: "4rem" }}>
+            <CallToAction />
+          </div>
+          <Blogs1 />
+          <Footer />
         </div>
-        <Blogs1 />
-        <Footer />
-      </div>
-    </LightTheme>
+      </LightTheme>
     </>
 
   );

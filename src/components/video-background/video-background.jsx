@@ -1,8 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import introData from "../../data/sections/introVideo.json";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import SwiperCore, { Navigation, Pagination, Parallax } from "swiper";
 
 import "swiper/css";
@@ -13,7 +11,7 @@ import fadeWhenScroll from "../../common/fadeWhenScroll";
 
 SwiperCore.use([Navigation, Pagination, Parallax]);
 
-const VideoBackground = ({ sliderRef }) => {
+const VideoBackground = ({ data, sliderRef }) => {
   const [load, setLoad] = React.useState(true);
   React.useEffect(() => {
     fadeWhenScroll(document.querySelectorAll(".fixed-slider .caption"));
@@ -28,12 +26,19 @@ const VideoBackground = ({ sliderRef }) => {
   const paginationRef = React.useRef(null);
 
   return (
-    <header ref={sliderRef} className="slider slider-prlx fixed-slider text-center" >
+    <header ref={sliderRef} className="slider slider-prlx fixed-slider text-center">
       <div className="swiper-container parallax-slider">
         {!load ? (
-          <Swiper speed={1000} parallax={true} navigation={{ prevEl: navigationPrevRef.current, nextEl: navigationNextRef.current,}}
-            pagination={{ type: "fraction", clickable: true, el: paginationRef.current, }}
-            onBeforeInit={(swiper) => { swiper.params.navigation.prevEl = navigationPrevRef.current; swiper.params.navigation.nextEl = navigationNextRef.current; swiper.params.pagination.el = paginationRef.current;}}
+          <Swiper
+            speed={1000}
+            parallax={true}
+            navigation={{ prevEl: navigationPrevRef.current, nextEl: navigationNextRef.current }}
+            pagination={{ type: "fraction", clickable: true, el: paginationRef.current }}
+            onBeforeInit={(swiper) => {
+              swiper.params.navigation.prevEl = navigationPrevRef.current;
+              swiper.params.navigation.nextEl = navigationNextRef.current;
+              swiper.params.pagination.el = paginationRef.current;
+            }}
             onSwiper={(swiper) => {
               setTimeout(() => {
                 for (var i = 0; i < swiper.slides.length; i++) {
@@ -60,10 +65,10 @@ const VideoBackground = ({ sliderRef }) => {
             className="swiper-wrapper"
             slidesPerView={1}
           >
-            {introData.map((slide) => (
+            {data.map((slide) => (
               <SwiperSlide key={slide.id} className="swiper-slide">
-                <div  style={{ position: 'relative'}}>
-                  <video className="bg-img valign video-bg"  autoPlay muted loop playsInline>
+                <div style={{ position: 'relative' }}>
+                  <video className="bg-img valign video-bg" autoPlay muted loop playsInline>
                     <source src={slide.video} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>

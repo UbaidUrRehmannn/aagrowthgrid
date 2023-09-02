@@ -12,12 +12,26 @@ import AboutIntro from "../components/About-intro";
 import LightTheme from '../layouts/Light'
 import Team from "../components/Team/team";
 import MinimalArea from "../components/Minimal-Area/minimal-area";
+import VideoBackground from "../components/video-background/video-background";
+import VideoComponentData from "../data/sections/AboutintroVideo.json"
+
 
 const About = () => {
- const navbarRef = React.useRef(null);
- const logoRef = React.useRef(null);
+  const fixedSlider = React.useRef(null);
+  const MainContent = React.useRef(null);
+  const navbarRef = React.useRef(null);
+  const logoRef = React.useRef(null);
 
  React.useEffect(() => {
+
+  setInterval(() => {
+    if (fixedSlider.current) {
+      var slidHeight = fixedSlider.current.offsetHeight;
+    }
+    if (MainContent.current) {
+      MainContent.current.style.marginTop = slidHeight + "px";
+    }
+  }, 1000);
    var navbar = navbarRef.current,
      logo = logoRef.current;
    if (window.pageYOffset > 300) {
@@ -32,23 +46,27 @@ const About = () => {
        navbar.classList.remove("nav-scroll");
      }
    });
- }, [navbarRef]);
+ }, [fixedSlider,MainContent, navbarRef]);
   return (
     <LightTheme>
-      <Navbar nr={navbarRef} lr={logoRef} theme="themeL" />
-      <PagesHeader />
-      <AboutIntro />
-      <Services style="4item" />
-      <VideoWithTestimonials />
-      {/* <SkillsCircle from="aboutPage" /> */}
-      <div className="mt-70">
+      {/* theme="themeL" */}
+      <Navbar nr={navbarRef} lr={logoRef}  />
+      <VideoBackground sliderRef={fixedSlider} data={VideoComponentData}/>
+      <div ref={MainContent} className="main-content">
+        {/* <PagesHeader /> */}
+        <AboutIntro />
+        <Services style="4item" />
+        <VideoWithTestimonials />
+        {/* <SkillsCircle from="aboutPage" /> */}
+        <div className="mt-70">
 
-      <Team />
+        <Team />
+        </div>
+        <MinimalArea />
+        <Clients theme="light" />
+        <CallToAction />
+        <Footer />
       </div>
-      <MinimalArea />
-      <Clients theme="light" />
-      <CallToAction />
-      <Footer />
     </LightTheme>
   );
 };
