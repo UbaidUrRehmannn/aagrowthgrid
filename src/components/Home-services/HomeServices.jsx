@@ -25,14 +25,14 @@ const HomeServices = ({ style, lines }) => {
           {featuresData.map((feature, index) => (
             <div key={feature.id} className="col-lg-6 mb-4 wow fadeInLeft" data-wow-delay={delays[index]} >
               {/* <div className="card-container"> */}
-                <div className="item-box home-services-item-box d-flex" >
-                  <div className="d-flex align-items-center">
+                <div className="item-box home-services-item-box display-flex-block" >
+                  <div className="d-flex align-items-center justify-content-center">
                     {/* <img className="services-image" src={feature.image} /> */}
                     <span className={`icon ${feature.icon}`}></span>
                   </div>
                   <div className="cont pl-4">
                     <h6>{feature.title}</h6>
-                    <p className="text-justify custom-row">{feature.content1}</p>
+                    <p className="text-justify">{feature.content1}</p>
                   </div>
                 </div>
               {/* </div> */}

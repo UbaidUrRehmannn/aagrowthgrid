@@ -13,7 +13,7 @@ import fadeWhenScroll from "../../common/fadeWhenScroll";
 
 SwiperCore.use([Navigation, Pagination, Parallax]);
 
-const IntroWithVideo = ({ sliderRef }) => {
+const VideoBackground = ({ sliderRef }) => {
   const [load, setLoad] = React.useState(true);
   React.useEffect(() => {
     fadeWhenScroll(document.querySelectorAll(".fixed-slider .caption"));
@@ -28,29 +28,12 @@ const IntroWithVideo = ({ sliderRef }) => {
   const paginationRef = React.useRef(null);
 
   return (
-    <header
-      ref={sliderRef}
-      className="slider slider-prlx fixed-slider text-center"
-    >
+    <header ref={sliderRef} className="slider slider-prlx fixed-slider text-center" >
       <div className="swiper-container parallax-slider">
         {!load ? (
-          <Swiper
-            speed={1000}
-            parallax={true}
-            navigation={{
-              prevEl: navigationPrevRef.current,
-              nextEl: navigationNextRef.current,
-            }}
-            pagination={{
-              type: "fraction",
-              clickable: true,
-              el: paginationRef.current,
-            }}
-            onBeforeInit={(swiper) => {
-              swiper.params.navigation.prevEl = navigationPrevRef.current;
-              swiper.params.navigation.nextEl = navigationNextRef.current;
-              swiper.params.pagination.el = paginationRef.current;
-            }}
+          <Swiper speed={1000} parallax={true} navigation={{ prevEl: navigationPrevRef.current, nextEl: navigationNextRef.current,}}
+            pagination={{ type: "fraction", clickable: true, el: paginationRef.current, }}
+            onBeforeInit={(swiper) => { swiper.params.navigation.prevEl = navigationPrevRef.current; swiper.params.navigation.nextEl = navigationNextRef.current; swiper.params.pagination.el = paginationRef.current;}}
             onSwiper={(swiper) => {
               setTimeout(() => {
                 for (var i = 0; i < swiper.slides.length; i++) {
@@ -79,23 +62,6 @@ const IntroWithVideo = ({ sliderRef }) => {
           >
             {introData.map((slide) => (
               <SwiperSlide key={slide.id} className="swiper-slide">
-                {/* <div className="bg-img valign" style={{ backgroundImage: `url(${slide.video})` }} data-overlay-dark="6">
-                  <div className="container">
-                    <div className="row justify-content-center">
-                      <div className="col-lg-8 col-md-10">
-                        <div className="caption center mt-30">
-                          <h2 className="color-font text-capitalize">{slide.title}</h2>
-                          {slide?.content && <p className="text-capitalize">{slide.content}</p>}
-                          <Link href="/about-us">
-                            <a className="butn bord curve mt-30">
-                              <span>REQUEST A CALLBACK</span>
-                            </a>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
                 <div  style={{ position: 'relative'}}>
                   <video className="bg-img valign video-bg"  autoPlay muted loop playsInline>
                     <source src={slide.video} type="video/mp4" />
@@ -122,15 +88,6 @@ const IntroWithVideo = ({ sliderRef }) => {
             ))}
           </Swiper>
         ) : null}
-        <div className="setone setwo">
-          <div ref={navigationNextRef} className="swiper-button-next swiper-nav-ctrl next-ctrl cursor-pointer">
-            <i className="fas fa-chevron-right"></i>
-          </div>
-          <div ref={navigationPrevRef} className="swiper-button-prev swiper-nav-ctrl prev-ctrl cursor-pointer">
-            <i className="fas fa-chevron-left"></i>
-          </div>
-        </div>
-        <div ref={paginationRef} className="swiper-pagination top botm"></div>
 
         <div className="social-icon">
           <a href="#0">
@@ -151,4 +108,4 @@ const IntroWithVideo = ({ sliderRef }) => {
   );
 };
 
-export default IntroWithVideo;
+export default VideoBackground;

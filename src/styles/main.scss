@@ -110,9 +110,12 @@ button {
   background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) for the desired level of darkness */
   pointer-events: none; /* Allows clicks to pass through the overlay to the video */
 }
+.display-flex-block {
+  display: flex !important;
+}
 @media (max-width: 576px) {
-  .custom-row {
-    color: red;
+  .display-flex-block {
+    display: block !important;
   }
 }
 
