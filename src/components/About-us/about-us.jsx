@@ -18,16 +18,13 @@ const AboutUs = () => {
                 {AboutUs1Date.title}
               </h3>
               <div className="text">
-                <Split>
+                {/* <Split>
                   <p className="wow txt mb-10 words chars splitting"data-splitting>
                     {AboutUs1Date.paragraphOne}
                   </p>
-                  {/* <p className="wow txt words chars splitting"data-splitting>
-                    {AboutUs1Date.paragraphTwo}
-                  </p> */}
-                </Split>
+                </Split> */}
+                <p>{AboutUs1Date.paragraphOne}</p>
               </div>
-              {/* <p>{AboutUs1Date.content}</p> */}
               {/* <Link href="/case-studies">
                 <a className="butn bord curve mt-30">
                   <span>CASE STUDIES</span>
@@ -54,11 +51,12 @@ const AboutUs = () => {
           <div className="col-lg-12 valign md-mb50">
             <div className="mb-50">
             <div className="text">
-                <Split>
+              <p>{AboutUs1Date.paragraphTwo}</p>
+                {/* <Split>
                   <p className="wow txt words chars splitting"data-splitting>
                     {AboutUs1Date.paragraphTwo}
                   </p>
-                </Split>
+                </Split> */}
               </div>
               <div className="text-center">
                 <Link href="/case-studies">

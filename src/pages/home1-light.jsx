@@ -17,7 +17,7 @@ import Footer from "../components/Footer/footer";
 import LightTheme from "../layouts/Light";
 import Cards from "../components/Cards/cards";
 import HomeServices from "../components/Home-services/HomeServices";
-// import IntroWithVideo from "../components/Intro-with-video/Intro-with-video";
+import IntroWithVideo from "../components/Intro-with-video/Intro-with-video";
 
 
 const Homepage = () => {
@@ -66,8 +66,8 @@ const Homepage = () => {
       </Head>
     <LightTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <IntroWithSlider sliderRef={fixedSlider} />
-      {/* <IntroWithVideo sliderRef={fixedSlider} /> */}
+      {/* <IntroWithSlider sliderRef={fixedSlider} /> */}
+      <IntroWithVideo sliderRef={fixedSlider} />
       <div ref={MainContent} className="main-content">
         <Cards />
         <AboutUs />

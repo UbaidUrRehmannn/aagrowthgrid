@@ -4,12 +4,9 @@ import Link from "next/link";
 import featuresData from "../../data/sections/homeServices.json";
 
 const HomeServices = ({ style, lines }) => {
+  const delays = [".3s", ".6s", ".9s", "1.2s", "1.5s", "1.8s"];
   return (
-    <section
-      className={`services bords section-padding ${
-        style === "4item" ? "lficon" : lines ? "" : "pt-0"
-      }`}
-    >
+    <section className={`services bords section-padding ${ style === "4item" ? "lficon" : lines ? "" : "pt-0" }`} >
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-8 col-md-10">
@@ -25,30 +22,20 @@ const HomeServices = ({ style, lines }) => {
         </div>
         <div className="row">
           {style === "4item"}
-          {featuresData.map((feature) => (
-            <div
-              key={feature.id}
-              className="col-lg-6 mb-4 wow fadeInLeft"
-              data-wow-delay={`${
-                feature.id == 1
-                  ? ".3"
-                  : feature.id === 2
-                  ? ".7"
-                  : feature.id === 3
-                  ? ".9"
-                  : ".9"
-              }s`}
-            >
-              <div className="item-box home-services-item-box d-flex">
-                <div className="d-flex align-items-center">
-                  {/* <img className="services-image" src={feature.image} /> */}
-                  <span className={`icon ${feature.icon}`}></span>
+          {featuresData.map((feature, index) => (
+            <div key={feature.id} className="col-lg-6 mb-4 wow fadeInLeft" data-wow-delay={delays[index]} >
+              {/* <div className="card-container"> */}
+                <div className="item-box home-services-item-box d-flex" >
+                  <div className="d-flex align-items-center">
+                    {/* <img className="services-image" src={feature.image} /> */}
+                    <span className={`icon ${feature.icon}`}></span>
+                  </div>
+                  <div className="cont pl-4">
+                    <h6>{feature.title}</h6>
+                    <p className="text-justify">{feature.content1}</p>
+                  </div>
                 </div>
-                <div className="cont pl-4">
-                  <h6>{feature.title}</h6>
-                  <p className="text-justify">{feature.content1}</p>
-                </div>
-              </div>
+              {/* </div> */}
             </div>
           ))}
         </div>
