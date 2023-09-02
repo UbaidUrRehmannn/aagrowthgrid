@@ -1,12 +1,10 @@
 import React from "react";
-// import Homepage from "./home1-light";
-import HomepageDark from "./home1-dark";
+import Homepage from "./home1-light";
 
 const Home = () => {
   return (
     <>
-      {/* <Homepage /> */}
-      <HomepageDark />
+      <Homepage />
     </>
   );
 };

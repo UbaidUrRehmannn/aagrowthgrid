@@ -15,11 +15,11 @@ class MyDocument extends Document {
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta
             name="keywords"
-            content="HTML5 Template Vie onepage themeforest"
+            content="AA Growth Grid, Amazon Wholesale FBA, Amazon Wholesale"
           />
           <meta
             name="description"
-            content="Vie - Onepage Multi-Purpose HTML5 Template"
+            content="Explore AA Growth Grid's portfolio of Amazon Wholesale FBA services and success stories. We specialize in helping brands succeed on Amazon's wholesale platform, offering expert strategies and solutions for your growth."
           />
           <meta name="author" content="" />
           <link rel="shortcut icon" href="/img/favicon.ico" />

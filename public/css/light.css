@@ -1687,7 +1687,7 @@ span:hover {
   color: #ffffff;
   background: linear-gradient(90deg, #002c67, #29b3fe) !important;
   border: none !important;
-transition: 3s;
+  transition: background 0.3s, color 0.3s;
 }
 
 .butn.bord:hover {
