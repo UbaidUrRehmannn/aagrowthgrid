@@ -4,6 +4,7 @@ import Link from "next/link";
 import featuresData from "../../data/sections/featuresAms.json";
 
 const Services = ({ style, lines }) => {
+  const delays = [".3s", ".6s", ".9s", "1.2s", "1.5s", "1.8s"];
   return (
     <section
       className={`services bords section-padding ${
@@ -25,19 +26,11 @@ const Services = ({ style, lines }) => {
         </div>
         <div className="row">
           {style === "4item"}
-          {featuresData.map((feature) => (
+          {featuresData.map((feature, index) => (
             <div
               key={feature.id}
               className="col-lg-6 wow fadeInLeft"
-              data-wow-delay={`${
-                feature.id == 1
-                  ? ".3"
-                  : feature.id === 2
-                  ? ".7"
-                  : feature.id === 3
-                  ? ".9"
-                  : ".9"
-              }s`}
+              data-wow-delay={delays[index]}
             >
               <div className="item-box">
                 {/* <div>

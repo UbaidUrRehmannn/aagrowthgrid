@@ -32,7 +32,7 @@ const HomeServices = ({ style, lines }) => {
                   </div>
                   <div className="cont pl-4">
                     <h6>{feature.title}</h6>
-                    <p className="text-justify">{feature.content1}</p>
+                    <p className="text-justify custom-row">{feature.content1}</p>
                   </div>
                 </div>
               {/* </div> */}
