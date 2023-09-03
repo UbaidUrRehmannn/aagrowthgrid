@@ -9,13 +9,13 @@ const ImageRight = () => {
     <section className="about-us section-padding">
       <div className="container">
         <div className="row">
-          <div className="col-lg-5 valign md-mb50">
+          <div className="col-lg-7 valign md-mb50">
             <div className="mb-50">
-              <h6 className="fw-100 text-u ls10 mb-10">
+              {/* <h6 className="fw-100 text-u ls10 mb-10">
                 {AboutUs1Date.smallTitle}
-              </h6>
-              <h3 className="fw-600 text-u ls1 mb-30 color-font">
-                {AboutUs1Date.title}
+              </h6> */}
+              <h3 className="fw-600 text-u ls1 mb-30 ">
+              ✨ A Symphony of Strategy and Expertise
               </h3>
               <div className="text">
                 {/* <Split>
@@ -23,7 +23,7 @@ const ImageRight = () => {
                     {AboutUs1Date.paragraphOne}
                   </p>
                 </Split> */}
-                <p>{AboutUs1Date.paragraphOne}</p>
+                <p className="text-justify">{AboutUs1Date.paragraphOne}</p>
               </div>
               {/* <Link href="/case-studies">
                 <a className="butn bord curve mt-30">
@@ -32,7 +32,7 @@ const ImageRight = () => {
               </Link> */}
             </div>
           </div>
-          <div className="col-lg-7 img">
+          <div className="col-lg-5 img p-0">
             <img src={AboutUs1Date.image} alt="" />
             {/* <div className="stauts">
               {AboutUs1Date.stauts.map((item) => (
