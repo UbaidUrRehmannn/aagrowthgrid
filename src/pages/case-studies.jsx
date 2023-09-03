@@ -4,7 +4,10 @@ import Navbar from "../components/Navbar/navbar";
 import Footer from "../components/Footer/footer";
 import WorksHeader from "../components/Works-header/works-header";
 import WorksStyle2 from "../components/Works-style2/works-style2";
-
+import ContactForm from "../components/Contact-form/contact-form";
+import ContactArch from "../components/Contact-arch/contact-arch";
+import ContactHeader from "../components/Contact-header/contact-header";
+import SContactForm from "../components/s-contact-form/s-contact-form";
 const WorksLight = () => {
   const fixedHeader = React.useRef(null);
   const MainContent = React.useRef(null);
@@ -47,6 +50,7 @@ const WorksLight = () => {
       <WorksHeader sliderRef={fixedHeader} />
       <div ref={MainContent} className="main-content">
         <WorksStyle2 grid={2} hideFilter filterPosition="center" />
+        <SContactForm />
         <Footer />
       </div>
     </LightTheme>

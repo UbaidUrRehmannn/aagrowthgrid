@@ -52,8 +52,7 @@ const SContactForm = ({ noLine }) => {
                   setTimeout(() => {
                     messageRef.current.innerText = "";
                   }, 2000);
-                }}
-              >
+                }} >
                 {({ errors, touched }) => (
                   <Form id="contact-form">
                     <div className="messages" ref={messageRef}></div>
