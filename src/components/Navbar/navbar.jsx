@@ -1,10 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
+import React, {useState} from "react";
 import Link from "next/link";
 import appData from "../../data/app.json";
 import { handleDropdown, handleMobileDropdown } from "../../common/navbar";
 
 const Navbar = ({ lr, nr, theme }) => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  // Function to toggle the dropdown
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
   return (
     <nav
       ref={nr}
@@ -27,16 +33,7 @@ const Navbar = ({ lr, nr, theme }) => {
           </a>
         </Link>
 
-        <button
-          className="navbar-toggler"
-          type="button"
-          onClick={handleMobileDropdown}
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button className="navbar-toggler" type="button" onClick={handleMobileDropdown} data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="icon-bar">
             <i className="fas fa-bars"></i>
           </span>
@@ -49,14 +46,8 @@ const Navbar = ({ lr, nr, theme }) => {
                 <a className="nav-link">Home</a>
               </Link>
             </li>
-            <li className="nav-item dropdown" onClick={handleDropdown}>
-              <span
-                className="nav-link dropdown-toggle"
-                data-toggle="dropdown"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
+            {/* <li className="nav-item dropdown" onClick={handleDropdown}>
+              <span className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >
                 Services
               </span>
               <div className="dropdown-menu">
@@ -67,7 +58,21 @@ const Navbar = ({ lr, nr, theme }) => {
                   <a className="dropdown-item">Amazon Account Management</a>
                 </Link>
               </div>
+            </li> */}
+            <li className={`nav-item dropdown ${isDropdownOpen ? 'show' : ''}`} onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
+              <span className="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded={isDropdownOpen}>
+                Services
+              </span>
+              <div className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`}>
+                <Link href={`/amazon-marketing-services`}>
+                  <a className="dropdown-item">Amazon PPC Management</a>
+                </Link>
+                <Link href={`/brand-management-services`}>
+                  <a className="dropdown-item">Amazon Account Management</a>
+                </Link>
+              </div>
             </li>
+
             <li className="nav-item">
               <Link href={`/about-us`}>
                 <a className="nav-link">About</a>

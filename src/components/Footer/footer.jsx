@@ -106,6 +106,11 @@ const Footer = ({ hideBGCOLOR }) => {
               <div className="logo">
                 <img src={appData.lightLogo} alt="" />
               </div>
+              <div className="copy-right">
+                <p> 
+                AA Growth Grid Short description
+                </p>
+              </div>
               <div className="social">
                 <a href="#0">
                   <i className="fab fa-facebook-f"></i>
@@ -121,18 +126,38 @@ const Footer = ({ hideBGCOLOR }) => {
                 </a>
               </div>
               <div className="copy-right">
-                <p>
-                  © 2022, Vie Template. Made with passion by
-                  <Link
-                    href="https://themeforest.net/user/themescamp/portfolio"
-                    
-                  >
-                    <a target="_blank">ThemesCamp</a>
-                  </Link>
-                  .
+                <p> 
+                  {/* <Link href="/" > 
+                    <a className="footer-link-style">AA Growth Grid</a>
+                  </Link> © {new Date().getFullYear()}, All rights reserved. */}
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      {/* <hr className="hr-color-footer" />
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6">
+            hiiii
+          </div>
+          <div className="col-md-6 text-right">
+            byyy
+          </div>
+        </div>
+      </div> */}
+      <hr className="hr-color-footer d-flex align-items-end" />
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6 d-flex align-items-end">
+              <div className="copy-right">
+                <p> 
+                  <Link href="/" > 
+                  <a className="footer-link-style">AA Growth Grid</a>
+                  </Link> © {new Date().getFullYear()}, All rights reserved.
+                </p>
+              </div>
           </div>
         </div>
       </div>

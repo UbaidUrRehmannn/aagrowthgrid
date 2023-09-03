@@ -195,3 +195,16 @@ li.dedication::before {
 .mb-70 {
   margin-bottom: 70px !important;
 }
+.hr-color-footer {
+  border-color: #7e7e7e;
+}
+.footer-link-style {
+  color: deepskyblue;
+  transition: transform 0.2s ease; /* Add a smooth transition effect */
+}
+
+.footer-link-style:hover {
+  color: rgb(0, 81, 255);
+  text-decoration: underline;
+  transform: scale(1.03); /* Scale the link by 5% on hover */
+}
