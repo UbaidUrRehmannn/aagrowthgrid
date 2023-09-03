@@ -3,8 +3,12 @@
   "smallTitle": "What We Do",
   "title": "Help you scale your business on Amazon",
   "paragraphOne": "Why choose us? Because we don't just offer services; we offer transformation. We're your Amazon orchestra, conducting a symphony of strategies, insights, and expertise that harmonize to compose a tale of unprecedented success. Whether you're an Amazon FBA Wholesale newcomer or a seasoned player seeking that extra edge, we're here to propel your brand to the forefront of Amazon's bustling marketplace.",
-  "paragraphTwo": "We're not just consultants; we're your brand's voice, strategy, and growth catalyst. Our dedication to boosting brands' sales and visibility on Amazon is unwavering. Through a blend of data-driven insights, strategic optimizations, and targeted marketing techniques, we craft a narrative that resonates with your brand's ethos and captivates your target audience.",
+  "paragraphTwo": "You're not just looking for assistance; you're seeking a catalyst that propels your brand from obscurity to stardom. You've engaged with others – consultants, virtual assistants – but their promises fell short of your expectations. We get it; your ambitions deserve more than empty words. They deserve action, results, and a partner who stands with you through every Amazon challenge.",
+  "paragraphThree": "Our journey isn't just a boast; it's a testament to our unwavering commitment to Amazon Wholesale excellence. We craft personalized strategies that resonate with your brand's voice, values, and goals. Our expertise isn't just about rankings; it's about cultivating a dynamic Amazon presence that transcends competition.",
   "image": "/img/about-us.jpg",
+  "imageOne": "/img/about-us.jpg",
+  "imageTwo": "/img/about-us.jpg",
+  "imageThree": "/img/about-us.jpg",
   "stauts": [
     { "id": 1, "number": "3", "letter": "K", "stautsName": "Happy Clients" },
     { "id": 2, "number": "14", "letter": "K", "stautsName": "Success Projects" }
