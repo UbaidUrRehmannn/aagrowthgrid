@@ -308,6 +308,12 @@ span:hover {
 .section-padding {
   padding: 120px 0;
 }
+.section-padding-top {
+  padding-top: 120px;
+}
+.section-padding-bottom {
+  padding-bottom: 120px;
+}
 
 .section-ptb {
   padding: 80px 0;
@@ -4904,12 +4910,16 @@ transition: 3s;
   display: none;
 }
 
-.min-area .content ul.feat li h6 {
+.min-area .content ul.feat li h5 {
   font-weight: 500;
   margin-bottom: 5px;
 }
 
-.min-area .content ul.feat li h6 span {
+.min-area .content ul.feat li h5:hover {
+  color: #29b3fe;
+}
+
+.min-area .content ul.feat li h5 span {
   color: #29b3fe;
   width: 30px;
   height: 30px;
@@ -4919,6 +4929,12 @@ transition: 3s;
   border: 1px solid #29b3fe;
   border-radius: 50%;
   margin-right: 10px;
+}
+
+.min-area .content ul.feat li h5:hover span {
+  background-color: #7ed2ff;
+  /* border: 1px solid #111; */
+  color: #0006f7;
 }
 
 .min-area .content ul.feat li p {
@@ -7487,7 +7503,7 @@ transition: 3s;
 
 .blog-pg.single .post .main-img .simpleParallax {
   height: 70vh;
-  max-height: 600px;
+  max-height: 700px;
 }
 
 .blog-pg.single .post .main-img img {

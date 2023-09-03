@@ -23,7 +23,8 @@ function MyApp({ Component, pageProps }) {
         id="splitting"
         src="/js/splitting.min.js"
       ></Script>
-      <Script id="simpleParallax" src="/js/simpleParallax.min.js"></Script>
+      {/* <Script id="simpleParallax" src="/js/simpleParallax.min.js"></Script> */}
+      <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
       <Script
         id="isotope"
         strategy="beforeInteractive"
