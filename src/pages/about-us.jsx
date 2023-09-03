@@ -16,7 +16,9 @@ import Team from "../components/Team/team";
 import MinimalArea from "../components/Minimal-Area/minimal-area";
 import VideoBackground from "../components/video-background/video-background";
 import VideoComponentData from "../data/sections/AboutintroVideo.json";
+import TextImageBannerData from "../data/sections/text-on-image.json";
 import ImageRight from "../components/text-right-image/text-right-image";
+import TextImageBanner from "../components/text-on-image/text-on-image";
 
 
 const About = () => {
@@ -62,17 +64,18 @@ const About = () => {
         <MinimalArea />
         <AboutSection />
         <ImageRight />
+        <TextImageBanner {...TextImageBannerData}/>
         {/* <AboutIntro /> */}
-        <Services style="4item" />
-        <VideoWithTestimonials />
+        {/* <Services style="4item" /> */}
+        {/* <VideoWithTestimonials /> */}
         {/* <SkillsCircle from="aboutPage" /> */}
-        <div className="mt-70">
+        {/* <div className="mt-70">
 
         <Team />
         </div>
         <MinimalArea />
         <Clients theme="light" />
-        <CallToAction />
+        <CallToAction /> */}
         <Footer />
       </div>
     </LightTheme>
