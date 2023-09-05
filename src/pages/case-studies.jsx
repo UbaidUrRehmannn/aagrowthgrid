@@ -4,10 +4,10 @@ import Navbar from "../components/Navbar/navbar";
 import Footer from "../components/Footer/footer";
 import WorksHeader from "../components/Works-header/works-header";
 import WorksStyle2 from "../components/Works-style2/works-style2";
-import ContactForm from "../components/Contact-form/contact-form";
-import ContactArch from "../components/Contact-arch/contact-arch";
-import ContactHeader from "../components/Contact-header/contact-header";
 import SContactForm from "../components/s-contact-form/s-contact-form";
+// import { getServerSideProps } from 'next';
+// import fsPromises from 'fs/promises';
+
 const WorksLight = () => {
   const fixedHeader = React.useRef(null);
   const MainContent = React.useRef(null);

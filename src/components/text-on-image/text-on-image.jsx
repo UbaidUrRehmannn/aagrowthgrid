@@ -7,7 +7,7 @@ import Split from "../Split";
 const TextImageBanner = ( data ) => {
   return (
     <section className="about-us section-padding">
-      <div className="mt-4 about-background-image d-flex align-items-center height-25 mt-70">
+      <div className="mt-4 about-background-image d-flex align-items-center height-36 mt-70">
         <div className="container">
           <div className="row px-5 text">
             <div className="col-lg-12 col-md-12 mb-4">

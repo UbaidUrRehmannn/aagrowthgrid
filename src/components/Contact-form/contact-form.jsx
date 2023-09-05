@@ -61,7 +61,7 @@ const ContactForm = () => {
                       </div>
                       <div className="form-group">
                         <Field
-                          id="form_name"
+                          id="form_phone"
                           type="text"
                           name="phone"
                           placeholder="Phone Number"

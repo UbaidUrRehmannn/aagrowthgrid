@@ -46,6 +46,7 @@ const Navbar = ({ lr, nr, theme }) => {
                 <a className="nav-link">Home</a>
               </Link>
             </li>
+            {/* OnClick nav sub menu open */}
             {/* <li className="nav-item dropdown" onClick={handleDropdown}>
               <span className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >
                 Services
@@ -59,7 +60,8 @@ const Navbar = ({ lr, nr, theme }) => {
                 </Link>
               </div>
             </li> */}
-            <li className={`nav-item dropdown ${isDropdownOpen ? 'show' : ''}`} onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
+            {/* OnMouseOver nav sub menu open */}
+            {/* <li className={`nav-item dropdown ${isDropdownOpen ? 'show' : ''}`} onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
               <span className="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded={isDropdownOpen}>
                 Services
               </span>
@@ -71,11 +73,16 @@ const Navbar = ({ lr, nr, theme }) => {
                   <a className="dropdown-item">Amazon Account Management</a>
                 </Link>
               </div>
-            </li>
+            </li> */}
 
             <li className="nav-item">
               <Link href={`/about-us`}>
                 <a className="nav-link">About</a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href={`/services`}>
+                <a className="nav-link">Services</a>
               </Link>
             </li>
             {/* <li className="nav-item">
