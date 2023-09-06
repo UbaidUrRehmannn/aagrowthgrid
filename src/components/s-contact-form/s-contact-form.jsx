@@ -43,7 +43,7 @@ const SContactForm = ({ noLine }) => {
   async function postJSON(data) {
     console.log("data from func is : ", data)
     try {
-      const response = await fetch("http://localhost:1234/api/postcontact", {
+      const response = await fetch("../../pages/api/postcontact.js", {
         method: "POST", // or 'PUT'
         headers: {
           "Content-Type": "application/json",
