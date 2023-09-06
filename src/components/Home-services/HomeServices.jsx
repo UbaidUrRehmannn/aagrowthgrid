@@ -3,7 +3,7 @@ import Link from "next/link";
 // import featuresData from "../../data/sections/features.json";
 import featuresData from "../../data/sections/homeServices.json";
 
-const HomeServices = ({ style, lines }) => {
+const HomeServices = ({ style, lines, data }) => {
   const delays = [".3s", ".6s", ".9s", "1.2s", "1.5s", "1.8s"];
   return (
     <section className={`services bords section-padding ${ style === "4item" ? "lficon" : lines ? "" : "pt-0" }`} >
@@ -22,7 +22,7 @@ const HomeServices = ({ style, lines }) => {
         </div>
         <div className="row">
           {style === "4item"}
-          {featuresData.map((feature, index) => (
+          {data.map((feature, index) => (
             <div key={feature.id} className="col-lg-6 mb-4 wow fadeInLeft" data-wow-delay={delays[index]} >
               {/* <div className="card-container"> */}
                 <div className="item-box home-services-item-box display-flex-block" >

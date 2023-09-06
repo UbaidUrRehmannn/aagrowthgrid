@@ -18,7 +18,9 @@ import LightTheme from "../layouts/Light";
 import Cards from "../components/Cards/cards";
 import HomeServices from "../components/Home-services/HomeServices";
 import VideoBackground from "../components/video-background/video-background";
-import HomeVideoSection from "../data/sections/introVideo.json"
+import HomeVideoSection from "../data/sections/introVideo.json";
+import homeFeaturesData from "../data/sections/homeServices.json";
+
 
 const Homepage = () => {
   const fixedSlider = React.useRef(null);
@@ -72,7 +74,7 @@ const Homepage = () => {
           <Cards />
           <AboutUs />
           <Numbers />
-          <HomeServices />
+          <HomeServices data={homeFeaturesData} />
           {/* <Services /> */}
           {/* <Works /> */}
           {/* <Testimonials /> */}

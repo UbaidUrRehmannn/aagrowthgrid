@@ -1,5 +1,5 @@
 import React from "react";
-// import {} from ""
+import successToastMessage from "../../common/successToastMessage"
 import { Formik, Form, Field } from "formik";
 
 const SContactForm = ({ noLine }) => {
@@ -53,16 +53,16 @@ const SContactForm = ({ noLine }) => {
         body: JSON.stringify(data),
       });
       const result = await response.text();
+      successToastMessage("Contact Form Submitted Successfully");
       console.log("Success:", result);
-    } 
-    catch (error) {
-      console.error("Error:", error);
-    }
       data.name = "";
       data.phone = "";
       data.email = "";
       data.subject = "";
       data.message = "";
+    } catch (error) {
+      console.error("Error:", error);
+    }
   }
 
   const sendMessage = (ms) => new Promise((r) => setTimeout(r, ms));

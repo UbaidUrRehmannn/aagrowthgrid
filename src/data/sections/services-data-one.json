@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "icon": "pe-7s-paint-bucket",
+    "image": "/img/service-2.svg",
+    "title": "Product Listings",
+    "content1": "We optimize your product listings to maximize visibility and conversion rates."
+  },
+  {
+    "id": 2,
+    "icon": "pe-7s-phone",
+    "image": "/img/service-2.svg",
+    "title": "Inventory Management",
+    "content1": "We help you maintain optimal inventory levels to avoid stockouts and overstock issues."
+  },
+  {
+    "id": 3,
+    "image": "/img/service-2.svg",
+    "icon": "pe-7s-paint-bucket",
+    "title": "Pricing Strategies",
+    "content1": "We implement pricing strategies to keep your products competitive while maintaining healthy profit margins."
+  },
+  {
+    "id": 4,
+    "image": "/img/service-2.svg",
+    "icon": "pe-7s-paint-bucket",
+    "title": "Supply Chain Optimization",
+    "content1": "We streamline your supply chain processes to minimize costs and improve efficiency."
+  },
+  {
+    "id": 5,
+    "image": "/img/service-2.svg",
+    "icon": "pe-7s-paint-bucket",
+    "title": "Brand Store Creation",
+    "content1": "We create stunning, customized brand stores that showcase your products in an appealing and brand-consistent manner."
+  },
+  {
+    "id": 6,
+    "image": "/img/service-2.svg",
+    "icon": "pe-7s-paint-bucket",
+    "title": "A+ Content",
+    "content1": "Our team develops engaging A+ content to highlight product features and benefits, increasing shopper confidence."
+  },
+  {
+    "id": 7,
+    "image": "/img/service-2.svg",
+    "icon": "pe-7s-paint-bucket",
+    "title": "Review Management",
+    "content1": "We monitor and manage product reviews to maintain a positive brand image."
+  },
+  {
+    "id": 8,
+    "image": "/img/service-2.svg",
+    "icon": "pe-7s-paint-bucket",
+    "title": "Advertising and Promotion",
+    "content1": "We create and manage targeted advertising campaigns to increase your brand's visibility and sales."
+  },
+  {
+    "id": 9,
+    "image": "/img/service-2.svg",
+    "icon": "pe-7s-paint-bucket",
+    "title": "Marketplace Strategy",
+    "content1": "We help you develop a winning strategy to increase sales and profitability."
+  },
+  {
+    "id": 10,
+    "image": "/img/service-2.svg",
+    "icon": "pe-7s-paint-bucket",
+    "title": "Pricing Optimization",
+    "content1": "We implement pricing strategies to help you compete effectively and maximize your margins."
+  },
+  {
+    "id": 11,
+    "image": "/img/service-2.svg",
+    "icon": "pe-7s-paint-bucket",
+    "title": "Account Management",
+    "content1": "Our team manages your Amazon seller account, ensuring it is always up to date and compliant with Amazon's policies."
+  },
+  {
+    "id": 12,
+    "image": "/img/service-2.svg",
+    "icon": "pe-7s-paint-bucket",
+    "title": "Negotiations and Deal-Making",
+    "content1": "We leverage our industry expertise to negotiate better deals and partnerships on your behalf."
+  }
+]

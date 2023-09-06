@@ -4,6 +4,8 @@ import Script from "next/script";
 import Cursor from "../components/cursor";
 import ScrollToTop from "../components/scrollToTop";
 import LoadingScreen from "../components/Loading-Screen";
+import { ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 import "../styles/main.scss";
 
 function MyApp({ Component, pageProps }) {
@@ -17,6 +19,7 @@ function MyApp({ Component, pageProps }) {
       <LoadingScreen />
       <Component {...pageProps} />
       <ScrollToTop />
+      <ToastContainer />
       <Script id="wow" src="/js/wow.min.js"></Script>
       <Script
         strategy="beforeInteractive"
