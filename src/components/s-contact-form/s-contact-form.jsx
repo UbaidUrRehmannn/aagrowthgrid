@@ -1,4 +1,5 @@
 import React from "react";
+// import {} from ""
 import { Formik, Form, Field } from "formik";
 
 const SContactForm = ({ noLine }) => {
@@ -42,18 +43,19 @@ const SContactForm = ({ noLine }) => {
 
   async function postJSON(data) {
     console.log("data from func is : ", data)
+    // https://aagrowthgrid.vercel.app/pages/api/postcontact.js
     try {
-      const response = await fetch("../../pages/api/postcontact.js", {
+      const response = await fetch("/api/postcontact", {
         method: "POST", // or 'PUT'
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(data),
       });
-  
       const result = await response.text();
       console.log("Success:", result);
-    } catch (error) {
+    } 
+    catch (error) {
       console.error("Error:", error);
     }
       data.name = "";
