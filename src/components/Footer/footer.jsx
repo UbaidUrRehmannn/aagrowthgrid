@@ -18,21 +18,36 @@ const Footer = ({ hideBGCOLOR }) => {
                   <span className="icon pe-7s-map-marker"></span>
                   <div className="cont">
                     <h6>Officeal Address</h6>
-                    <p>504 White St . Dawsonville, GA 30534 , New York</p>
+                    <p>5900 - Balcones Drive STE 13683 Austin, Texas, 78731.</p>
                   </div>
                 </li>
                 <li>
                   <span className="icon pe-7s-mail"></span>
                   <div className="cont">
                     <h6>Email Us</h6>
-                    <p>support@gmail.com</p>
+                    <a
+                      className=" cursor-pointer hover-underline-animation "
+                      target="_blank"
+                      rel="noreferrer"
+                      href="mailto:info@aagrowthgrid.com"
+                    >
+                      <p>info@aagrowthgrid.com</p>
+                    </a>
+                    {/* <a href=""><p>support@gmail.com</p></a> */}
                   </div>
                 </li>
                 <li>
                   <span className="icon pe-7s-call"></span>
                   <div className="cont">
                     <h6>Call Us</h6>
-                    <p>+87986451666</p>
+                    <a
+                      className=" cursor-pointer hover-underline-animation "
+                      target="_blank"
+                      rel="noreferrer"
+                      href="tel:+17373035655"
+                    >
+                      <p>+1 (737) 3035-655</p>
+                    </a>
                   </div>
                 </li>
               </ul>
@@ -107,9 +122,7 @@ const Footer = ({ hideBGCOLOR }) => {
                 <img src={appData.lightLogo} alt="" />
               </div>
               <div className="copy-right">
-                <p> 
-                AA Growth Grid Short description
-                </p>
+                <p>AA Growth Grid Short description</p>
               </div>
               <div className="social">
                 <a href="#0">
@@ -126,7 +139,7 @@ const Footer = ({ hideBGCOLOR }) => {
                 </a>
               </div>
               <div className="copy-right">
-                <p> 
+                <p>
                   {/* <Link href="/" > 
                     <a className="footer-link-style">AA Growth Grid</a>
                   </Link> © {new Date().getFullYear()}, All rights reserved. */}
@@ -151,13 +164,14 @@ const Footer = ({ hideBGCOLOR }) => {
       <div className="container">
         <div className="row">
           <div className="col-md-6 d-flex align-items-end">
-              <div className="copy-right">
-                <p> 
-                  <Link href="/" > 
+            <div className="copy-right">
+              <p>
+                <Link href="/">
                   <a className="footer-link-style">AA Growth Grid</a>
-                  </Link> © {new Date().getFullYear()}, All rights reserved.
-                </p>
-              </div>
+                </Link>{" "}
+                © {new Date().getFullYear()}, All rights reserved.
+              </p>
+            </div>
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@ import Footer from "../components/Footer/footer";
 import PagesHeader from "../components/Pages-header";
 // import AboutIntro from "../components/About-intro";
 import AboutSection from "../components/About-page-section/about-page-section";
-import LightTheme from '../layouts/Light';
+import LightTheme from "../layouts/Light";
 import Team from "../components/Team/team";
 import MinimalArea from "../components/Minimal-Area/minimal-area";
 import VideoBackground from "../components/video-background/video-background";
@@ -19,7 +19,7 @@ import VideoComponentData from "../data/sections/AboutintroVideo.json";
 import TextImageBannerData from "../data/sections/text-on-image.json";
 import ImageRight from "../components/text-right-image/text-right-image";
 import TextImageBanner from "../components/text-on-image/text-on-image";
-
+import SContactForm from "../components/s-contact-form/s-contact-form";
 
 const About = () => {
   const fixedSlider = React.useRef(null);
@@ -27,55 +27,53 @@ const About = () => {
   const navbarRef = React.useRef(null);
   const logoRef = React.useRef(null);
 
- React.useEffect(() => {
-
-  setInterval(() => {
-    if (fixedSlider.current) {
-      var slidHeight = fixedSlider.current.offsetHeight;
+  React.useEffect(() => {
+    setInterval(() => {
+      if (fixedSlider.current) {
+        var slidHeight = fixedSlider.current.offsetHeight;
+      }
+      if (MainContent.current) {
+        MainContent.current.style.marginTop = slidHeight + "px";
+      }
+    }, 1000);
+    var navbar = navbarRef.current,
+      logo = logoRef.current;
+    if (window.pageYOffset > 300) {
+      navbar.classList.add("nav-scroll");
+    } else {
+      navbar.classList.remove("nav-scroll");
     }
-    if (MainContent.current) {
-      MainContent.current.style.marginTop = slidHeight + "px";
-    }
-  }, 1000);
-   var navbar = navbarRef.current,
-     logo = logoRef.current;
-   if (window.pageYOffset > 300) {
-     navbar.classList.add("nav-scroll");
-   } else {
-     navbar.classList.remove("nav-scroll");
-   }
-   window.addEventListener("scroll", () => {
-     if (window.pageYOffset > 300) {
-       navbar.classList.add("nav-scroll");
-       logo.setAttribute("src", appData.darkLogo);
-     } else {
-       navbar.classList.remove("nav-scroll");
-       logo.setAttribute("src", appData.lightLogo);
-     }
-   });
- }, [fixedSlider,MainContent, navbarRef]);
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 300) {
+        navbar.classList.add("nav-scroll");
+        logo.setAttribute("src", appData.darkLogo);
+      } else {
+        navbar.classList.remove("nav-scroll");
+        logo.setAttribute("src", appData.lightLogo);
+      }
+    });
+  }, [fixedSlider, MainContent, navbarRef]);
   return (
     <LightTheme>
       {/* theme="themeL" */}
-      <Navbar nr={navbarRef} lr={logoRef}  />
-      <VideoBackground sliderRef={fixedSlider} data={VideoComponentData}/>
+      <Navbar nr={navbarRef} lr={logoRef} />
+      <VideoBackground sliderRef={fixedSlider} data={VideoComponentData} />
       <div ref={MainContent} className="main-content">
         {/* <PagesHeader /> */}
         <MinimalArea />
         <AboutSection />
         <ImageRight />
-        <TextImageBanner {...TextImageBannerData}/>
-        {/* <AboutIntro /> */}
-        {/* <Services style="4item" /> */}
-        {/* <VideoWithTestimonials /> */}
-        {/* <SkillsCircle from="aboutPage" /> */}
-        {/* <div className="mt-70">
-
-        <Team />
+        <TextImageBanner {...TextImageBannerData} />
+        <div style={{ marginTop: "4rem" }}>
+          <SContactForm
+            heading={
+              "Let AA Growth Grid be your trusted partner in achieving success on Amazon."
+            }
+            description={
+              "Contact us today to learn more about how we can help your brand thrive and excel in the ever-evolving world of e-commerce."
+            }
+          />
         </div>
-        <MinimalArea />
-        <Clients theme="light" />
-        <CallToAction /> */}
         <Footer />
       </div>
     </LightTheme>

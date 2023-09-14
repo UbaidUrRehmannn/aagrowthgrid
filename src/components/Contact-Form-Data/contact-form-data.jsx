@@ -15,22 +15,6 @@ const ContactFormData = ({ style, lines, data, heading }) => {
   return (
     <section className={`services bords section-padding-top  ${ style === "4item" ? "lficon" : lines ? "" : "" }`} >
       <div className="container">
-        {/* <div className="row">
-          {style === "4item"}
-          {data.map((feature, index) => (
-            <div key={feature.id} className="col-lg-6 mb-4 wow fadeInLeft" data-wow-delay={newDelays[index]} >
-                <div className="item-box home-services-item-box display-flex-block" >
-                  <div className="d-flex align-items-center justify-content-center">
-                    <span className={`icon ${feature.icon}`}></span>
-                  </div>
-                  <div className="cont pl-4">
-                    <h6>{feature.title}</h6>
-                    <p className="text-justify">{feature.content1}</p>
-                  </div>
-                </div>
-            </div>
-          ))}
-        </div> */}
         
         <div className="table-responsive">
         <table className="table table-striped table-bordered">

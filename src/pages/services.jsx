@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar/navbar";
 import Head from "next/head";
 import IntroWithSlider from "../components/Intro-with-slider/intro-with-slider";
 import AboutUs from "../components/About-us/about-us";
+import CardRightImage from "../components/Card-right-image/Card-Right-Image";
 import VideoWithTestimonials from "../components/Video-with-testimonials/video-with-testimonials";
 import appData from "../data/app.json";
 import Footer from "../components/Footer/footer";
@@ -13,7 +14,7 @@ import ServicesFeaturesDataTwo from "../data/sections/services-data-two.json";
 import servicesIntroData from "../data/sections/services-intro.json";
 import SContactForm from "../components/s-contact-form/s-contact-form";
 import TextImageBanner from "../components/text-on-image/text-on-image";
-import TextImageBannerData from "../data/sections/text-on-image.json";
+import TextImageBannerData from "../data/sections/services-text-on-image.json";
 
 const Homepage = () => {
   const fixedSlider = React.useRef(null);
@@ -63,7 +64,8 @@ const Homepage = () => {
         <Navbar nr={navbarRef} lr={logoRef} />
         <IntroWithSlider sliderRef={fixedSlider} data={servicesIntroData} />
         <div ref={MainContent} className="main-content">
-          <AboutUs />
+          {/* <AboutUs /> */}
+          <CardRightImage />
           <TextImageBanner {...TextImageBannerData}/>
           <HomeServices
             data={ServicesFeaturesData}

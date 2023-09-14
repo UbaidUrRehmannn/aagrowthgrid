@@ -20,7 +20,7 @@ const Navbar = ({ lr, nr, theme }) => {
     >
       <div className="container">
         <Link href="/">
-          <a className="logo">
+          <a className="logo logo-width">
             {theme ? (
               theme === "themeL" ? (
                 <img ref={lr} src={appData.darkLogo} alt="logo" />

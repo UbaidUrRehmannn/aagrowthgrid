@@ -20,7 +20,7 @@ import HomeServices from "../components/Home-services/HomeServices";
 import VideoBackground from "../components/video-background/video-background";
 import HomeVideoSection from "../data/sections/introVideo.json";
 import homeFeaturesData from "../data/sections/homeServices.json";
-
+import SContactForm from "../components/s-contact-form/s-contact-form";
 
 const Homepage = () => {
   const fixedSlider = React.useRef(null);
@@ -85,9 +85,10 @@ const Homepage = () => {
 
           </div> */}
           <div style={{ marginTop: "4rem" }}>
-            <CallToAction />
+            {/* <CallToAction /> */}
+          <SContactForm heading={"Let AA Growth Grid be your trusted partner in achieving success on Amazon."} description={"Contact us today to learn more about how we can help your brand thrive and excel in the ever-evolving world of e-commerce."}/>
           </div>
-          <Blogs1 />
+          {/* <Blogs1 /> */}
           <Footer />
         </div>
       </LightTheme>

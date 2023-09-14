@@ -1982,7 +1982,7 @@ transition: 3s;
 }
 
 .navbar .logo {
-  width: 50px;
+  width: 25%;
 }
 
 .nav-scroll {
@@ -8354,7 +8354,7 @@ footer .item .copy-right p a {
 
   .navbar .logo {
     margin-left: 15px;
-    width: 50px;
+    width: 45%;
   }
 
   .nav-scroll .icon-bar,
@@ -8744,7 +8744,7 @@ footer .item .copy-right p a {
   }
 
   .navbar .logo {
-    width: 40px;
+    width: 75%;
   }
 
   .hamenu .menu-links .main-menu > li {
