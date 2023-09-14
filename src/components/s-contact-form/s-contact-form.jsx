@@ -26,17 +26,13 @@ const SContactForm = ({ noLine, heading, description }) => {
     let error;
     if (!value) {
       error = "Subject is Required";
-    } else if (!/^[a-zA-Z]+([ -][a-zA-Z]+)*$/i.test(value)) {
-      error = "Invalid Subject";
-    }
+    } 
     return error;
   }
   function validateMessage(value) {
     let error;
     if (!value) {
       error = "Message is Required";
-    } else if (value.length < 30) {
-      error = "Message should be minimum 30 characters";
     }
     return error;
   }
@@ -63,14 +59,14 @@ const SContactForm = ({ noLine, heading, description }) => {
     <section className="contact-sec section-padding position-re">
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-lg-8 col-md-10">
+          <div className="col-lg-12 col-md-10">
             <div className="sec-head  text-center">
               <h4 className="wow color-font">
                 {heading}
               </h4>
-              <h6 className="wow fadeIn" data-wow-delay=".5s">
+              <p className="wow fadeIn" data-wow-delay=".5s">
                 {description}
-              </h6>
+              </p>
             </div>
           </div>
         </div>

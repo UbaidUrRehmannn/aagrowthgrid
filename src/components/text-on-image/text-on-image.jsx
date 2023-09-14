@@ -2,11 +2,10 @@
 import React from "react";
 import Link from "next/link";
 import Split from "../Split";
-// import AboutUs1Date from "../../data/sections/text-right-image.json";
 
 const TextImageBanner = ( data ) => {
   return (
-    <section className="about-us section-padding">
+    <section className="about-us section-padding-bottom">
       <div className="mt-4 about-background-image d-flex align-items-center height-36 mt-70">
         <div className="container">
           <div className="row px-5 text">

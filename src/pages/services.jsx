@@ -3,25 +3,17 @@ import Navbar from "../components/Navbar/navbar";
 import Head from "next/head";
 import IntroWithSlider from "../components/Intro-with-slider/intro-with-slider";
 import AboutUs from "../components/About-us/about-us";
-// import Services from "../components/Services/services";
-// import Works from "../components/Works/works";
-import Numbers from "../components/Numbers/numbers";
-// import Testimonials from "../components/Testimonials/testimonials";
 import VideoWithTestimonials from "../components/Video-with-testimonials/video-with-testimonials";
-// import SkillsCircle from "../components/Skills-circle/skills-circle";
-// import Clients from "../components/Clients/clients";
-import Blogs1 from "../components/blogs/Blogs1/blogs1";
 import appData from "../data/app.json";
-import CallToAction from "../components/Call-to-action/call-to-action";
 import Footer from "../components/Footer/footer";
 import LightTheme from "../layouts/Light";
-import Cards from "../components/Cards/cards";
 import HomeServices from "../components/Home-services/HomeServices";
-import VideoBackground from "../components/video-background/video-background";
-import HomeVideoSection from "../data/sections/introVideo.json";
 import ServicesFeaturesData from "../data/sections/services-data-one.json";
 import ServicesFeaturesDataTwo from "../data/sections/services-data-two.json";
+import servicesIntroData from "../data/sections/services-intro.json";
 import SContactForm from "../components/s-contact-form/s-contact-form";
+import TextImageBanner from "../components/text-on-image/text-on-image";
+import TextImageBannerData from "../data/sections/text-on-image.json";
 
 const Homepage = () => {
   const fixedSlider = React.useRef(null);
@@ -69,12 +61,10 @@ const Homepage = () => {
       </Head>
       <LightTheme>
         <Navbar nr={navbarRef} lr={logoRef} />
-        <IntroWithSlider sliderRef={fixedSlider} />
-        {/* <VideoBackground sliderRef={fixedSlider} data={HomeVideoSection}/> */}
+        <IntroWithSlider sliderRef={fixedSlider} data={servicesIntroData} />
         <div ref={MainContent} className="main-content">
-          <Cards />
           <AboutUs />
-          <Numbers />
+          <TextImageBanner {...TextImageBannerData}/>
           <HomeServices
             data={ServicesFeaturesData}
             heading={
@@ -85,21 +75,10 @@ const Homepage = () => {
             data={ServicesFeaturesDataTwo}
             heading={"Why Choose AA Growth Grid?"}
           />
-          {/* <Services /> */}
-          {/* <Works /> */}
-          {/* <Testimonials /> */}
           <VideoWithTestimonials />
-          {/* <SkillsCircle theme="light" /> */}
-          {/* <div style={{marginTop: "4rem"}}>
-          <Clients theme="light" />
-          </div> */}
-
           <div style={{ marginTop: "4rem" }}>
-            {/* <CallToAction /> */}
           <SContactForm heading={"Let AA Growth Grid be your trusted partner in achieving success on Amazon."} description={"Contact us today to learn more about how we can help your brand thrive and excel in the ever-evolving world of e-commerce."}/>
-          {/* <SContactForm heading={"Let AA Growth Grid be your trusted partner in achieving success on Amazon. Contact us today to learn more about how we can help your brand thrive and excel in the ever-evolving world of e-commerce."}/> */}
           </div>
-          {/* <Blogs1 /> */}
           <Footer />
         </div>
       </LightTheme>

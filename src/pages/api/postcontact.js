@@ -1,5 +1,20 @@
 import * as fs from 'fs';
 const filePath =  "src/data/contactformdata/contactformentries.json";
+
+const now = new Date();
+const formattedDate = now.toLocaleDateString("en-US", {
+  year: "numeric",
+  month: "short",
+  day: "2-digit",
+});
+const formattedTime = now.toLocaleTimeString("en-US", {
+  hour: "2-digit",
+  minute: "2-digit",
+  hour12: true,
+});
+
+const formattedTimestamp = `${formattedDate} ${formattedTime}`;
+
 export default async function handler(req, res) {
   if (req.method === 'POST') {
       // let data = await fs.promises.readdir('src/data/contactformdata');
@@ -8,7 +23,7 @@ export default async function handler(req, res) {
 
       const newRecord = {
         id: data.length + 1,
-        timestamp: new Date(),
+        timestamp: formattedTimestamp,
         ...req.body
       };
       data.push(newRecord);

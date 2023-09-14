@@ -13,7 +13,7 @@ import fadeWhenScroll from "../../common/fadeWhenScroll";
 
 SwiperCore.use([Navigation, Pagination, Parallax]);
 
-const IntroWithSlider = ({ sliderRef }) => {
+const IntroWithSlider = ({ sliderRef, data }) => {
   const [load, setLoad] = React.useState(true);
   React.useEffect(() => {
     fadeWhenScroll(document.querySelectorAll(".fixed-slider .caption"));
@@ -77,7 +77,7 @@ const IntroWithSlider = ({ sliderRef }) => {
             className="swiper-wrapper"
             slidesPerView={1}
           >
-            {introData.map((slide) => (
+            {data.map((slide) => (
               <SwiperSlide key={slide.id} className="swiper-slide">
                 <div
                   className="bg-img valign"
@@ -92,7 +92,7 @@ const IntroWithSlider = ({ sliderRef }) => {
                           {slide?.content && <p className="text-capitalize">{slide.content}</p>}
                           <Link href="/about-us">
                             <a className="butn bord curve mt-30">
-                              <span>REQUEST A CALLBACK</span>
+                              <span>{slide.buttonText}</span>
                             </a>
                           </Link>
                         </div>
