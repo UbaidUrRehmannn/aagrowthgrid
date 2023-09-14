@@ -74,7 +74,7 @@ const Homepage = () => {
           <Cards />
           <AboutUs />
           <Numbers />
-          <HomeServices data={homeFeaturesData} />
+          <HomeServices data={homeFeaturesData} heading={'Why Choose AA Growth Grid?'} />
           {/* <Services /> */}
           {/* <Works /> */}
           {/* <Testimonials /> */}

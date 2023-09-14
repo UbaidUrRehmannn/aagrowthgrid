@@ -1,14 +1,14 @@
 [
   {
     "id": 1,
-    "icon": "pe-7s-paint-bucket",
+    "icon": "pe-7s-graph3",
     "image": "/img/service-2.svg",
     "title": "Data-Driven Strategies for Success",
     "content1": "Success on Amazon isn't accidental; it's meticulously orchestrated. Our data-driven strategies are the compass that guides your journey. We dive deep into market trends, competitor analysis, and consumer behavior to craft strategies that position your products for maximum impact. With us, your decisions are backed by data, and your actions are aligned with Amazon success."
   },
   {
     "id": 2,
-    "icon": "pe-7s-phone",
+    "icon": "pe-7s-flag",
     "image": "/img/service-2.svg",
     "title": "Market Penetration and Positioning",
     "content1": "Entering the Amazon landscape requires finesse. Our market penetration strategies ensure your products break through the clutter, capturing the attention of your potential customers. We're not just about listing; we're about positioning – placing your brand in the spotlight where it belongs."
@@ -16,20 +16,20 @@
   {
     "id": 3,
     "image": "/img/service-2.svg",
-    "icon": "pe-7s-paint-bucket",
+    "icon": "pe-7s-diamond",
     "title": "Holistic Brand Growth",
     "content1": "Our approach isn't just about boosting sales; it's about holistic brand growth. We sculpt your Amazon presence with attention to detail, curating a brand image that resonates across every touchpoint. From your product listings to your brand store, we're your architects of Amazon brand resonance."
   },
   {
     "id": 4,
-    "icon": "pe-7s-phone",
+    "icon": "pe-7s-science",
     "image": "/img/service-2.svg",
     "title": "Sales Optimization and Scalability",
     "content1": "Sales optimization isn't a one-time endeavor; it's a continuous evolution. Our strategies not only boost current sales but pave the way for scalable growth. We're your partners in amplifying conversions, enhancing listings, and navigating the algorithms that dictate Amazon's dynamics."
   },
   {
     "id": 5,
-    "icon": "pe-7s-paint-bucket",
+    "icon": "pe-7s-repeat",
     "image": "/img/service-2.svg",
     "title": "Collaborate for Amazon Triumph",
     "content1": "Every brand has a unique story to tell, and we're here to amplify yours. Let's collaborate, aligning our expertise with your brand's aspirations. Your Amazon journey is our priority, and together, we'll craft a saga of triumph that sets your brand apart."
@@ -37,7 +37,7 @@
 
   {
     "id": 6,
-    "icon": "pe-7s-phone",
+    "icon": "pe-7s-rocket",
     "image": "/img/service-2.svg",
     "title": "Experience the Difference",
     "content1": "Discover the AA Growth Grid difference – where Amazon expertise, strategic insight, and dedication converge to drive results. Join us in igniting Amazon triumph, and let's script a success story that stands the test of time."

@@ -1,10 +1,17 @@
 import React from "react";
 import Link from "next/link";
 // import featuresData from "../../data/sections/features.json";
-import featuresData from "../../data/sections/homeServices.json";
 
-const HomeServices = ({ style, lines, data }) => {
-  const delays = [".3s", ".6s", ".9s", "1.2s", "1.5s", "1.8s"];
+const HomeServices = ({ style, lines, data, heading }) => {
+  const numberOfValues = data.length;
+  const interval = 0.4; // Set the desired interval (in seconds)
+
+  const newDelays = [];
+
+  for (let i = 0; i < numberOfValues; i++) {
+    const newDelay = (i * interval).toFixed(1) + "s";
+    newDelays.push(newDelay);
+  }
   return (
     <section className={`services bords section-padding ${ style === "4item" ? "lficon" : lines ? "" : "pt-0" }`} >
       <div className="container">
@@ -12,7 +19,7 @@ const HomeServices = ({ style, lines, data }) => {
           <div className="col-lg-8 col-md-10">
             <div className="sec-head  text-center">
               <h6 className="wow fadeIn" data-wow-delay=".5s">
-                What AA Growth Grid Offers
+                {heading}
               </h6>
               {/* <h3 className="wow color-font">
                 We are a new digital product development agency
@@ -23,7 +30,7 @@ const HomeServices = ({ style, lines, data }) => {
         <div className="row">
           {style === "4item"}
           {data.map((feature, index) => (
-            <div key={feature.id} className="col-lg-6 mb-4 wow fadeInLeft" data-wow-delay={delays[index]} >
+            <div key={feature.id} className="col-lg-6 mb-4 wow fadeInLeft" data-wow-delay={newDelays[index]} >
               {/* <div className="card-container"> */}
                 <div className="item-box home-services-item-box display-flex-block" >
                   <div className="d-flex align-items-center justify-content-center">

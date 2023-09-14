@@ -8,6 +8,7 @@ export default async function handler(req, res) {
 
       const newRecord = {
         id: data.length + 1,
+        timestamp: new Date(),
         ...req.body
       };
       data.push(newRecord);

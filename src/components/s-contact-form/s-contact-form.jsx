@@ -2,7 +2,7 @@ import React from "react";
 import successToastMessage from "../../common/successToastMessage"
 import { Formik, Form, Field } from "formik";
 
-const SContactForm = ({ noLine }) => {
+const SContactForm = ({ noLine, heading, description }) => {
   const messageRef = React.useRef(null);
   function validateEmail(value) {
     let error;
@@ -43,7 +43,6 @@ const SContactForm = ({ noLine }) => {
 
   async function postJSON(data) {
     console.log("data from func is : ", data)
-    // https://aagrowthgrid.vercel.app/pages/api/postcontact.js
     try {
       const response = await fetch("/api/postcontact", {
         method: "POST", // or 'PUT'
@@ -54,12 +53,6 @@ const SContactForm = ({ noLine }) => {
       });
       const result = await response.text();
       successToastMessage("Contact Form Submitted Successfully");
-      console.log("Success:", result);
-      data.name = "";
-      data.phone = "";
-      data.email = "";
-      data.subject = "";
-      data.message = "";
     } catch (error) {
       console.error("Error:", error);
     }
@@ -72,12 +65,12 @@ const SContactForm = ({ noLine }) => {
         <div className="row justify-content-center">
           <div className="col-lg-8 col-md-10">
             <div className="sec-head  text-center">
+              <h4 className="wow color-font">
+                {heading}
+              </h4>
               <h6 className="wow fadeIn" data-wow-delay=".5s">
-                Contact Us
+                {description}
               </h6>
-              <h3 className="wow color-font">
-                Let’s Get in Touch And Make Magic Together.
-              </h3>
             </div>
           </div>
         </div>
@@ -214,21 +207,7 @@ const SContactForm = ({ noLine }) => {
                 }}
                 onSubmit={async (values) => {
                   await sendMessage(500);
-                  alert(JSON.stringify(values, null, 2));
                   postJSON(values);
-
-                  messageRef.current.innerText =
-                    "Your Message has been successfully sent. I will contact you soon.";
-                  // Reset the values (optional since Formik handles this)
-                  // values.name = "";
-                  // values.phone = "";
-                  // values.email = "";
-                  // values.subject = "";
-                  // values.message = "";
-                  // clear message
-                  setTimeout(() => {
-                    messageRef.current.innerText = "";
-                  }, 1000);
                 }}
               >
                 {(formikProps) => (

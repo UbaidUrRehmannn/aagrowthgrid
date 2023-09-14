@@ -1,0 +1,31 @@
+[
+
+  {
+    "id": 1,
+    "icon": "pe-7s-star",
+    "image": "/img/service-2.svg",
+    "title": "Experience",
+    "content1": "With years of experience in the e-commerce and Amazon marketplace, we have a proven track record of success."
+  },
+  {
+    "id": 2,
+    "icon": "pe-7s-users",
+    "image": "/img/service-2.svg",
+    "title": "Dedicated Team",
+    "content1": "Our team of experts is committed to your brand's success and growth on Amazon."
+  },
+  {
+    "id": 3,
+    "image": "/img/service-2.svg",
+    "icon": "pe-7s-umbrella",
+    "title": "Tailored Solutions: ",
+    "content1": "We understand that each brand is unique, so we create customized strategies to meet your specific needs."
+  },
+  {
+    "id": 4,
+    "image": "/img/service-2.svg",
+    "icon": "pe-7s-graph1",
+    "title": "Results-Driven",
+    "content1": "Our focus is on delivering tangible results - increased sales, improved brand visibility, and better profit margins."
+  }
+]

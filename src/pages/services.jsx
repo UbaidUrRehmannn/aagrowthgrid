@@ -20,7 +20,8 @@ import HomeServices from "../components/Home-services/HomeServices";
 import VideoBackground from "../components/video-background/video-background";
 import HomeVideoSection from "../data/sections/introVideo.json";
 import ServicesFeaturesData from "../data/sections/services-data-one.json";
-
+import ServicesFeaturesDataTwo from "../data/sections/services-data-two.json";
+import SContactForm from "../components/s-contact-form/s-contact-form";
 
 const Homepage = () => {
   const fixedSlider = React.useRef(null);
@@ -58,7 +59,7 @@ const Homepage = () => {
     <>
       <Head>
         <title>
-        AA Growth Grid | Strategic Consulting and Amazon Marketing Agency
+          AA Growth Grid | Strategic Consulting and Amazon Marketing Agency
         </title>
         <meta
           name="description"
@@ -74,7 +75,16 @@ const Homepage = () => {
           <Cards />
           <AboutUs />
           <Numbers />
-          <HomeServices data={ServicesFeaturesData} />
+          <HomeServices
+            data={ServicesFeaturesData}
+            heading={
+              "Wether you are a Brand or a Third Party Seller, you got you covered with our services"
+            }
+          />
+          <HomeServices
+            data={ServicesFeaturesDataTwo}
+            heading={"Why Choose AA Growth Grid?"}
+          />
           {/* <Services /> */}
           {/* <Works /> */}
           {/* <Testimonials /> */}
@@ -82,17 +92,18 @@ const Homepage = () => {
           {/* <SkillsCircle theme="light" /> */}
           {/* <div style={{marginTop: "4rem"}}>
           <Clients theme="light" />
-
           </div> */}
+
           <div style={{ marginTop: "4rem" }}>
-            <CallToAction />
+            {/* <CallToAction /> */}
+          <SContactForm heading={"Let AA Growth Grid be your trusted partner in achieving success on Amazon."} description={"Contact us today to learn more about how we can help your brand thrive and excel in the ever-evolving world of e-commerce."}/>
+          {/* <SContactForm heading={"Let AA Growth Grid be your trusted partner in achieving success on Amazon. Contact us today to learn more about how we can help your brand thrive and excel in the ever-evolving world of e-commerce."}/> */}
           </div>
           {/* <Blogs1 /> */}
           <Footer />
         </div>
       </LightTheme>
     </>
-
   );
 };
 

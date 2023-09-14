@@ -50,7 +50,7 @@ const WorksLight = () => {
       <WorksHeader sliderRef={fixedHeader} />
       <div ref={MainContent} className="main-content">
         <WorksStyle2 grid={2} hideFilter filterPosition="center" />
-        <SContactForm />
+        {/* <SContactForm /> */}
         <Footer />
       </div>
     </LightTheme>
