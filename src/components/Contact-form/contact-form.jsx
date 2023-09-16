@@ -1,5 +1,6 @@
 import React from "react";
 import ContactFromDate from "../../data/sections/form-info.json";
+import successToastMessage from "../../common/successToastMessage";
 import { Formik, Form, Field } from "formik";
 
 const ContactForm = () => {
@@ -7,13 +8,56 @@ const ContactForm = () => {
   function validateEmail(value) {
     let error;
     if (!value) {
-      error = "Required";
+      error = "Email is Required";
     } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
-      error = "Invalid email address";
+      error = "Invalid Email Address";
     }
     return error;
   }
-  const sendMessage = (ms) => new Promise((r) => setTimeout(r, ms));
+  function validateName(value) {
+    let error;
+    if (!value) {
+      error = "Name is Required";
+    } else if (!/^[a-zA-Z]+([ -][a-zA-Z]+)*$/i.test(value)) {
+      error = "Invalid Name";
+    }
+    return error;
+  }
+  function validateSubject(value) {
+    let error;
+    if (!value) {
+      error = "Subject is Required";
+    }
+    return error;
+  }
+  function validateMessage(value) {
+    let error;
+    if (!value) {
+      error = "Message is Required";
+    }
+    return error;
+  }
+
+  async function postJSON(data) {
+    try {
+      const response = await fetch("/api/postcontact", {
+        method: "POST", // or 'PUT'
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+      const result = await response.text();
+      successToastMessage("Contact Form Submitted Successfully");
+      values.name = "";
+      values.email = "";
+      values.phone = "";
+      values.subject = "";
+      values.message = "";
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  }
   return (
     <section className="contact section-padding">
       <div className="container">
@@ -24,26 +68,15 @@ const ContactForm = () => {
               <Formik
                 initialValues={{
                   name: "",
-                  email: "",
                   phone: "",
+                  email: "",
+                  subject: "",
                   message: "",
                 }}
-                onSubmit={async (values) => {
-                  await sendMessage(500);
-                  alert(JSON.stringify(values, null, 2));
-                  // show message
-
-                  messageRef.current.innerText =
-                    "Your Message has been successfully sent. I will contact you soon.";
-                  // Reset the values
-                  values.name = "";
-                  values.email = "";
-                  values.phone = "";
-                  values.message = "";
-                  // clear message
-                  setTimeout(() => {
-                    messageRef.current.innerText = "";
-                  }, 2000);
+                onSubmit={async (values, { resetForm }) => {
+                  await postJSON(values);
+                  resetForm(); // Reset the form fields
+                  console.log(values);
                 }}
               >
                 {({ errors, touched }) => (
@@ -52,20 +85,26 @@ const ContactForm = () => {
                     <div className="controls">
                       <div className="form-group">
                         <Field
+                          validate={validateName}
                           id="form_name"
                           type="text"
                           name="name"
-                          placeholder="Name"
+                          placeholder="Name *"
                           required="required"
                         />
+                        {errors.name &&
+                          touched.name && (
+                            <div className="text-danger">
+                              {errors.name}
+                            </div>
+                          )}
                       </div>
                       <div className="form-group">
                         <Field
                           id="form_phone"
                           type="text"
                           name="phone"
-                          placeholder="Phone Number"
-                          required="required"
+                          placeholder="Phone Number (Optional)"
                         />
                       </div>
                       <div className="form-group">
@@ -74,22 +113,49 @@ const ContactForm = () => {
                           id="form_email"
                           type="email"
                           name="email"
-                          placeholder="Email"
+                          placeholder="Email *"
+                          required="required"
                         />
-                        {errors.email && touched.email && (
-                          <div>{errors.email}</div>
-                        )}
+                        {errors.email &&
+                          touched.email && (
+                            <div className="text-danger">
+                              {errors.email}
+                            </div>
+                          )}
                       </div>
+                      <div className="form-group">
+                            <Field
+                              validate={validateSubject}
+                              id="form_subject"
+                              type="text"
+                              name="subject"
+                              placeholder="Subject *"
+                              required="required"
+                            />
+                            {errors.subject &&
+                              touched.subject && (
+                                <div className="text-danger">
+                                  {errors.subject}
+                                </div>
+                              )}
+                          </div>
                     </div>
                     <div className="form-group">
                       <Field
+                        validate={validateMessage}
                         as="textarea"
                         id="form_message"
                         name="message"
-                        placeholder="Message"
+                        placeholder="Message *"
                         rows="4"
                         required="required"
                       />
+                      {errors.message &&
+                        touched.message && (
+                          <div className="text-danger">
+                            {errors.message}
+                          </div>
+                        )}
                     </div>
 
                     <button type="submit" className="butn bord">
@@ -108,9 +174,25 @@ const ContactForm = () => {
               </h3>
               <div className="item mb-40">
                 <h5>
-                  <a href="#0">{ContactFromDate.email}</a>
+                  <a
+                    className=" cursor-pointer hover-underline-animation "
+                    target="_blank"
+                    rel="noreferrer"
+                    href="mailto:info@aagrowthgrid.com"
+                  >
+                    {ContactFromDate.email}
+                  </a>
                 </h5>
-                <h5>{ContactFromDate.phone}</h5>
+                <h5>
+                  <a
+                    className=" cursor-pointer hover-underline-animation "
+                    target="_blank"
+                    rel="noreferrer"
+                    href="tel:+17373035655"
+                  >
+                    {ContactFromDate.phone}
+                  </a>
+                </h5>
               </div>
               <h3 className="wow" data-splitting>
                 Visit Us.
@@ -122,7 +204,7 @@ const ContactForm = () => {
                   {ContactFromDate.location.second}
                 </h6>
               </div>
-              <div className="social mt-50">
+              {/* <div className="social mt-50">
                 <a href="#0" className="icon">
                   <i className="fab fa-facebook-f"></i>
                 </a>
@@ -135,7 +217,7 @@ const ContactForm = () => {
                 <a href="#0" className="icon">
                   <i className="fab fa-behance"></i>
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

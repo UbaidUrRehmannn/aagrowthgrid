@@ -217,7 +217,7 @@ li.dedication::before {
   width: 400px;
   padding: 40px;
   transform: translate(-50%, -50%);
-  background: rgba(0,0,0,.5);
+  background: #fbfbfb;
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
   border-radius: 10px;
@@ -226,7 +226,7 @@ li.dedication::before {
 .login-box h2 {
   margin: 0 0 30px;
   padding: 0;
-  color: #fff;
+  color:  #111;
   text-align: center;
 }
 
@@ -238,30 +238,70 @@ li.dedication::before {
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
-  color: #fff;
+  color: #525252;
   margin-bottom: 30px;
   border: none;
   border-bottom: 1px solid #fff;
   outline: none;
   background: transparent;
 }
+.login-box .user-box input.password {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #525252;
+  margin-bottom: 0px !important;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+// .login-box .user-box label {
+//   position: absolute;
+//   top:0;
+//   left: 0;
+//   padding: 10px 0;
+//   font-size: 16px;
+//   color: #525252;
+//   pointer-events: none;
+//   transition: .5s;
+// }
+// .login-box .user-box span.password-toggle {
+//   position: absolute;
+//   top:0;
+//   left: 90%;
+//   padding: 10px 0;
+//   cursor: pointer;
+//   font-size: 20px;
+//   color: #2c2c2c;
+// }
 .login-box .user-box label {
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   padding: 10px 0;
   font-size: 16px;
-  color: #fff;
+  color: #525252;
   pointer-events: none;
   transition: .5s;
 }
 
+.login-box .user-box span.password-toggle {
+  position: absolute;
+  top: 0;
+  right: 5px; /* Change left to right to position it to the right */
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 20px;
+  color: #2c2c2c;
+}
+
 .login-box .user-box input:focus ~ label,
 .login-box .user-box input:valid ~ label {
-  top: -20px;
+  top: -30px;
   left: 0;
   color: #03e9f4;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .login-box form a {
@@ -413,6 +453,12 @@ li.dedication::before {
 .hover-underline-animation-navbar:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+.navbar .navbar-nav .nav-link-contect-auth {
+  color:  #111 !important;
+}
+.mb-60 {
+  margin-bottom: 60px;
 }
 // .logo-width {
 //   width: 25% !important;

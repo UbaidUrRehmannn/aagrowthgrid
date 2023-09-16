@@ -1,13 +1,19 @@
 import React, { useState } from "react";
 import successToastMessage from "../../common/successToastMessage";
+import { FaBeer, FaEye, FaEyeSlash } from "react-icons/fa";
 
 const ContactFormAuth = ({ noLine, heading, description, onAuthentication }) => {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
   const correctUsersList = [
     {
-      username: "ubaidurrehman128@gmail.com",
-      pass: "Ubaid",
+      username: "ubaidurrehman",
+      pass: "ubaid",
     },
     {
       username: "ali@gmail.com",
@@ -27,6 +33,7 @@ const ContactFormAuth = ({ noLine, heading, description, onAuthentication }) => 
     );
 
     if (matchingUser) {
+      sessionStorage.setItem('auth', 'true');
       onAuthentication(true);
     } else {
       alert("Incorrect password. Please try again.");
@@ -55,15 +62,36 @@ const ContactFormAuth = ({ noLine, heading, description, onAuthentication }) => 
                       value={userName}
                       onChange={(e) => setUserName(e.target.value)}
                     />
-                    <label>Username</label>
+                    <label>Username </label>
                   </div>
-                  <div className="user-box">
+                  {/* <div className="user-box">
                     <input
-                      type="password"
+                      type={showPassword ? 'text' : 'password'}
+                      className="password"
                       required
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
                     />
+                    <label>Password</label>
+                    <span onClick={togglePasswordVisibility}>
+                      {showPassword ? (
+                        <FaEyeSlash /> // Change to your eye-slash icon
+                      ) : (
+                        <FaEye /> // Change to your eye icon
+                      )}
+                    </span>
+                  </div> */}
+                  <div className="user-box">
+                    <input
+                      type={showPassword ? 'text' : 'password'}
+                      className="password"
+                      required
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                    />
+                    <span onClick={togglePasswordVisibility} className="password-toggle">
+                      {showPassword ? <FaEyeSlash /> : <FaEye />}
+                    </span>
                     <label>Password</label>
                   </div>
                   <a onClick={handlePasswordSubmit} className="cursor-pointer">

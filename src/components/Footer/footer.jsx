@@ -18,7 +18,7 @@ const Footer = ({ hideBGCOLOR }) => {
                   <span className="icon pe-7s-map-marker"></span>
                   <div className="cont">
                     <h6>Officeal Address</h6>
-                    <p>5900 - Balcones Drive STE 13683 Austin, Texas, 78731.</p>
+                    <p>5900 - Balcones Drive STE 13683 Austin, Texas, 78731</p>
                   </div>
                 </li>
                 <li>

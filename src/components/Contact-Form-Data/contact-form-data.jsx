@@ -36,7 +36,7 @@ const ContactFormData = ({ style, lines, data, heading }) => {
                 <td>{item.timestamp}</td>
                 <td>{item.name}</td>
                 <td>{item.phone}</td>
-                <td>{item.email}</td>
+                <td><a className="cursor-pointer hover-underline-animation" target="_blank" rel="noreferrer" href={`mailto:${item.email}`}>{item.email}</a></td>
                 <td>{item.subject}</td>
                 <td>{item.message}</td>
               </tr>

@@ -50,7 +50,7 @@ const CaseStudyRightImage = () => {
             </div>
           </div>
         <div className="col-lg-6">
-            <div className="img">
+            <div className="img bottom-padding-less-img">
               <img
                 className="thumparallax-down"
                 src="/img/about-us/about-section.webp"
@@ -63,7 +63,7 @@ const CaseStudyRightImage = () => {
         </div>
         <div className="row">
           <div className="col-lg-2"></div>
-          <div className="col-lg-8 text-center">
+          <div className="col-lg-8 text-center mb-60">
           <Link href="/about-us">
             <a className="butn bord curve mt-30">
               <span> Download Case Study</span>

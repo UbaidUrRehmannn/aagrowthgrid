@@ -71,6 +71,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+::selection {
+  background-color: #ffcc00; /* Change this to your desired background color */
+  color: #333; /* Change this to your desired text color */
+}
+
 img {
   width: 100%;
   height: auto;
@@ -1986,7 +1991,7 @@ transition: 3s;
 }
 
 .nav-scroll {
-  background: #e7e7e7;
+  background: #f9f9f9;
   border-color: #e7e7e7;
   padding: 0;
   position: fixed;
@@ -4851,6 +4856,9 @@ transition: 3s;
   padding: 120px 0 120px 80px;
   position: relative;
   z-index: 3;
+}
+.min-area .img.bottom-padding-less-img {
+  padding: 120px 0 30px 80px !important;
 }
 
 .min-area .img:after {
@@ -8206,7 +8214,7 @@ footer .item .logo {
 }
 
 footer .item .logo img {
-  width: 50px;
+  width: 100%
 }
 
 footer .item .social a {
