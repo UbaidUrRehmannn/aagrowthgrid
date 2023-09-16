@@ -20,17 +20,17 @@ const Navbar = ({ lr, nr, theme }) => {
     >
       <div className="container">
         <Link href="/">
-          <a className="logo logo-width">
-            {theme ? (
-              theme === "themeL" ? (
-                <img ref={lr} src={appData.darkLogo} alt="logo" />
-              ) : (
-                <img ref={lr} src={appData.lightLogo} alt="logo" />
-              )
-            ) : (
-              <img ref={lr} src={appData.lightLogo} alt="logo" />
-            )}
-          </a>
+            <a className="logo">
+              {theme ? (
+                theme === "themeL" ? (
+                    <img ref={lr} src={appData.darkLogo} alt="logo" />
+                    ) : (
+                  <img ref={lr} src={appData.lightLogo} alt="logo" />
+                 )
+                ) : (
+                  <img ref={lr} src={appData.lightLogo} alt="logo" />
+              )}
+            </ a>
         </Link>
 
         <button className="navbar-toggler" type="button" onClick={handleMobileDropdown} data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,7 +43,7 @@ const Navbar = ({ lr, nr, theme }) => {
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <Link href={`/`}>
-                <a className="nav-link">Home</a>
+                <a className="nav-link hover-underline-animation-navbar">Home</a>
               </Link>
             </li>
             {/* OnClick nav sub menu open */}
@@ -77,12 +77,12 @@ const Navbar = ({ lr, nr, theme }) => {
 
             <li className="nav-item">
               <Link href={`/about-us`}>
-                <a className="nav-link">About</a>
+                <a className="nav-link hover-underline-animation-navbar">About</a>
               </Link>
             </li>
             <li className="nav-item">
               <Link href={`/services`}>
-                <a className="nav-link">Services</a>
+                <a className="nav-link hover-underline-animation-navbar">Services</a>
               </Link>
             </li>
             {/* <li className="nav-item">
@@ -92,18 +92,18 @@ const Navbar = ({ lr, nr, theme }) => {
             </li> */}
             <li className="nav-item">
               <Link href={`/case-studies`}>
-                <a className="nav-link">Case Studies</a>
+                <a className="nav-link hover-underline-animation-navbar">Case Studies</a>
               </Link>
             </li>
             <li className="nav-item">
               <Link href={`/blogs`}>
-                <a className="nav-link">Blogs</a>
+                <a className="nav-link hover-underline-animation-navbar">Blogs</a>
               </Link>
             </li>
 
             <li className="nav-item">
               <Link href={`/contact`}>
-                <a className="nav-link">Contact</a>
+                <a className="nav-link hover-underline-animation-navbar">Contact</a>
               </Link>
             </li>
           </ul>

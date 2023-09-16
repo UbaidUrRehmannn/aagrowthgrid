@@ -9,10 +9,11 @@ import appData from "../data/app.json";
 import HomeServices from "../components/Home-services/HomeServices";
 import ServicesFeaturesData from "../data/sections/services-data-one.json";
 import ServicesFeaturesDataTwo from "../data/sections/services-data-two.json";
-import servicesIntroData from "../data/sections/services-intro.json";
+import CaseStudiesIntro from "../data/sections/Case-Studies/Case-Studies-Intro.json";
 import SContactForm from "../components/s-contact-form/s-contact-form";
 import TextImageBanner from "../components/text-on-image/text-on-image";
 import TextImageBannerData from "../data/sections/services-text-on-image.json";
+import CaseStudyLeftImage from "../components/Case-Study-Left-Image/case-study-left-image"
 
 const WorksLight = () => {
   const fixedSlider = React.useRef(null);
@@ -68,8 +69,9 @@ const WorksLight = () => {
     // </LightTheme>
       <LightTheme>
         <Navbar nr={navbarRef} lr={logoRef} />
-        <IntroWithSlider sliderRef={fixedSlider} data={servicesIntroData} />
+        <IntroWithSlider sliderRef={fixedSlider} data={CaseStudiesIntro} />
         <div ref={MainContent} className="main-content">
+          <CaseStudyLeftImage />
           <CardRightImage />
           <TextImageBanner {...TextImageBannerData}/>
           <HomeServices data={ServicesFeaturesData} heading={ "Wether you are a Brand or a Third Party Seller, you got you covered with our services"}/>
