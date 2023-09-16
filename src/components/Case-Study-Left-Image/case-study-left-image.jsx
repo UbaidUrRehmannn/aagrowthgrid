@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import cardMouseEffect from "../../common/cardMouseEffect";
+import Link from "next/link";
 import { thumparallaxDown } from "../../common/thumparallax";
 
 const CaseStudyLeftImage = () => {
@@ -51,13 +52,24 @@ const CaseStudyLeftImage = () => {
                     <span>3</span> 💰 A Remarkable 2022 Milestone
                   </h6>
                   <p>
-                    Fast forward to 2022, and our collaboration bore fruit. Our client's Amazon account not only surpassed $250k+ in sales but achieved an astonishing 22% Return on Investment (ROI). This milestone was more than just numbers; it was a testament to trust and dedication. 📈 👏
+                    Fast forward to 2022, and our collaboration bore fruit. Our client`&apos;s Amazon account not only surpassed $250k+ in sales but achieved an astonishing 22% Return on Investment (ROI). This milestone was more than just numbers; it was a testament to trust and dedication. 📈 👏
                   </p>
                 </li>
               </ul>
             </div>
           </div>
           
+        </div>
+        <div className="row">
+          <div className="col-lg-2"></div>
+          <div className="col-lg-8 text-center">
+          <Link href="/about-us">
+            <a className="butn bord curve mt-30">
+              <span> Download Case Study</span>
+            </a>
+          </Link>
+          </div>
+          <div className="col-lg-2"></div>
         </div>
       </div>
     </section>

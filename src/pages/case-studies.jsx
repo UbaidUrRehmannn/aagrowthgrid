@@ -14,6 +14,7 @@ import SContactForm from "../components/s-contact-form/s-contact-form";
 import TextImageBanner from "../components/text-on-image/text-on-image";
 import TextImageBannerData from "../data/sections/services-text-on-image.json";
 import CaseStudyLeftImage from "../components/Case-Study-Left-Image/case-study-left-image"
+import CaseStudyRightImage from "../components/Case-Study-Right-Image/case-study-right-image"
 
 const WorksLight = () => {
   const fixedSlider = React.useRef(null);
@@ -72,6 +73,7 @@ const WorksLight = () => {
         <IntroWithSlider sliderRef={fixedSlider} data={CaseStudiesIntro} />
         <div ref={MainContent} className="main-content">
           <CaseStudyLeftImage />
+          <CaseStudyRightImage />
           <CardRightImage />
           <TextImageBanner {...TextImageBannerData}/>
           <HomeServices data={ServicesFeaturesData} heading={ "Wether you are a Brand or a Third Party Seller, you got you covered with our services"}/>
