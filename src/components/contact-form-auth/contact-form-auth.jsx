@@ -12,7 +12,7 @@ const ContactFormAuth = ({ noLine, heading, description, onAuthentication }) => 
   };
   const correctUsersList = [
     {
-      username: "ubaidurrehman",
+      username: "ubaidurrehman@gmail.com",
       pass: "ubaid",
     },
     {
@@ -21,17 +21,37 @@ const ContactFormAuth = ({ noLine, heading, description, onAuthentication }) => 
     },
   ];
 
+  // const handlePasswordSubmit = (e) => {
+  //   e.preventDefault();
+  //   const trimmedUserName = userName.trim();
+  //   const trimmedPassword = password.trim();
+  //   // Check if the trimmed username and password match any entry in the correctUsersList
+  //   const matchingUser = correctUsersList.find(
+  //     (user) =>
+  //       user.username === trimmedUserName && user.pass === trimmedPassword
+  //   );
+
+  //   if (matchingUser) {
+  //     sessionStorage.setItem('auth', 'true');
+  //     onAuthentication(true);
+  //   } else {
+  //     alert("Incorrect password. Please try again.");
+  //   }
+  // };
+
   const handlePasswordSubmit = (e) => {
     e.preventDefault();
-    const trimmedUserName = userName.trim();
+    
+    const trimmedUserName = userName.trim().toLowerCase();
     const trimmedPassword = password.trim();
-
-    // Check if the trimmed username and password match any entry in the correctUsersList
+    
+    // Check if the trimmed and lowercase username and password match any entry in the correctUsersList
     const matchingUser = correctUsersList.find(
       (user) =>
-        user.username === trimmedUserName && user.pass === trimmedPassword
+        user.username.toLowerCase() === trimmedUserName &&
+        user.pass === trimmedPassword
     );
-
+  
     if (matchingUser) {
       sessionStorage.setItem('auth', 'true');
       onAuthentication(true);
@@ -39,13 +59,7 @@ const ContactFormAuth = ({ noLine, heading, description, onAuthentication }) => 
       alert("Incorrect password. Please try again.");
     }
   };
-
-  // const handlePasswordSubmit = (e) => {
-  //   e.preventDefault();
-  //   const trimmedUserName = userName.trim();
-  //   const trimmedPassword = password.trim();
-  //   console.log("trimmedUserName: ", trimmedUserName, "trimmedPassword: ", trimmedPassword);
-  // };
+  
   return (
     <section className="contact-sec section-padding position-re">
       <div className="container">
