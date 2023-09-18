@@ -40,7 +40,7 @@ const ContactForm = () => {
   }
 
   async function postJSON(data) {
-    const response = await fetch(`https://aagrowthgrid.vercel.app`+`/api/postcontact`, {
+    const response = await fetch("/api/postcontact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -52,20 +52,14 @@ const ContactForm = () => {
       const result = await response.text();
       console.log("🚀 ~ file: contact-form.jsx:51 ~ postJSON ~ result:", result);
       console.log("🚀 ~ file: contact-form.jsx:51 ~ postJSON ~ response:", response);
-  
       successToastMessage("Contact Form Submitted Successfully");
-      values.name = "";
-      values.email = "";
-      values.phone = "";
-      values.subject = "";
-      values.message = "";
     } else {
       errorToastMessage("Unable to Submit Contact Form");
       console.error("API returned a non-200 status code:", response.status);
       
     }
   }
-  // "/api/postcontact",
+
   // async function postJSON(data) {
   //   try {
   //     const response = await fetch("/api/postcontact", {
