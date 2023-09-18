@@ -1,6 +1,7 @@
 import React from "react";
 import ContactFromDate from "../../data/sections/form-info.json";
 import successToastMessage from "../../common/successToastMessage";
+import errorToastMessage from "../../common/errorToastMessage";
 import { Formik, Form, Field } from "formik";
 
 const ContactForm = () => {
@@ -39,28 +40,55 @@ const ContactForm = () => {
   }
 
   async function postJSON(data) {
-    try {
-      const response = await fetch("/api/postcontact", {
-        method: "POST", // or 'PUT'
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
+    const response = await fetch(`https://aagrowthgrid.vercel.app`+`/api/postcontact`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+  
+    if (response.status === 200) {
       const result = await response.text();
-      console.log("🚀 ~ file: contact-form.jsx:51 ~ postJSON ~ result:", result)
-      console.log("🚀 ~ file: contact-form.jsx:51 ~ postJSON ~ response:", response)
-      
+      console.log("🚀 ~ file: contact-form.jsx:51 ~ postJSON ~ result:", result);
+      console.log("🚀 ~ file: contact-form.jsx:51 ~ postJSON ~ response:", response);
+  
       successToastMessage("Contact Form Submitted Successfully");
       values.name = "";
       values.email = "";
       values.phone = "";
       values.subject = "";
       values.message = "";
-    } catch (error) {
-      console.error("Error:", error);
+    } else {
+      errorToastMessage("Unable to Submit Contact Form");
+      console.error("API returned a non-200 status code:", response.status);
+      
     }
   }
+  // "/api/postcontact",
+  // async function postJSON(data) {
+  //   try {
+  //     const response = await fetch("/api/postcontact", {
+  //       method: "POST", // or 'PUT'
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify(data),
+  //     });
+  //     const result = await response.text();
+  //     console.log("🚀 ~ file: contact-form.jsx:51 ~ postJSON ~ result:", result)
+  //     console.log("🚀 ~ file: contact-form.jsx:51 ~ postJSON ~ response:", response)
+      
+  //     successToastMessage("Contact Form Submitted Successfully");
+  //     values.name = "";
+  //     values.email = "";
+  //     values.phone = "";
+  //     values.subject = "";
+  //     values.message = "";
+  //   } catch (error) {
+  //     console.error("Error:", error);
+  //   }
+  // }
   return (
     <section className="contact section-padding">
       <div className="container">
