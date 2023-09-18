@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Company Portfolio</title>
+        <title>AA Growth Grid | Portfolio</title>
         <link rel="icon" href="/img/favicon.ico" />
       </Head>
       <Cursor />
