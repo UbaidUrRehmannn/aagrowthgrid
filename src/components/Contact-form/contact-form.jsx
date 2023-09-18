@@ -48,6 +48,9 @@ const ContactForm = () => {
         body: JSON.stringify(data),
       });
       const result = await response.text();
+      console.log("🚀 ~ file: contact-form.jsx:51 ~ postJSON ~ result:", result)
+      console.log("🚀 ~ file: contact-form.jsx:51 ~ postJSON ~ response:", response)
+      
       successToastMessage("Contact Form Submitted Successfully");
       values.name = "";
       values.email = "";
