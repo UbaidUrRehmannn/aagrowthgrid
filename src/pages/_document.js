@@ -22,7 +22,7 @@ class MyDocument extends Document {
             content="Explore AA Growth Grid's portfolio of Amazon Wholesale FBA services and success stories. We specialize in helping brands succeed on Amazon's wholesale platform, offering expert strategies and solutions for your growth."
           />
           <meta name="author" content="" />
-          <link rel="shortcut icon" href="/img/favicon.ico" />
+          <link rel="shortcut icon" href="/img/favicon.png" />
           <link
             href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
             rel="stylesheet"

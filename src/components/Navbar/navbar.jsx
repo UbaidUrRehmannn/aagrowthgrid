@@ -96,10 +96,15 @@ const Navbar = ({ lr, nr, theme }) => {
               </Link>
             </li>
             <li className="nav-item">
+              <Link href={`/aagrowthgrid-community`}>
+                <a className="nav-link hover-underline-animation-navbar">Community</a>
+              </Link>
+            </li>
+            {/* <li className="nav-item">
               <Link href={`/blogs`}>
                 <a className="nav-link hover-underline-animation-navbar">Blogs</a>
               </Link>
-            </li>
+            </li> */}
 
             <li className="nav-item">
               <Link href={`/contact`}>

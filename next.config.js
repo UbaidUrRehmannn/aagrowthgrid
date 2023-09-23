@@ -2,6 +2,9 @@ const path = require("path");
 
 module.exports = {
   reactStrictMode: true,
+  // output: 'export',
+  // // Optional: Change the output directory `out` -> `dist`
+  // distDir: 'dist',
   sassOptions: {
     includePaths: [path.join(__dirname, "css")],
   },

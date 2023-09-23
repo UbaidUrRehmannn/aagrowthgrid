@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>AA Growth Grid | Portfolio</title>
-        <link rel="icon" href="/img/favicon.ico" />
+        <link rel="icon" href="/img/favicon.png" />
       </Head>
       <Cursor />
       <LoadingScreen />
