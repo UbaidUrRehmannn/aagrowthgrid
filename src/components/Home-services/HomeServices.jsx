@@ -13,7 +13,7 @@ const HomeServices = ({ style, lines, data, heading }) => {
     newDelays.push(newDelay);
   }
   return (
-    <section className={`services bords section-padding ${ style === "4item" ? "lficon" : lines ? "" : "pt-0" }`} >
+    <section className={`services bords section-padding-bottom ${ style === "4item" ? "lficon" : lines ? "" : "pt-0" }`} >
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-8 col-md-10">

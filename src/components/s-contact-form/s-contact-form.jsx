@@ -60,7 +60,7 @@ const SContactForm = ({ noLine, heading, description }) => {
 
   // const sendMessage = (ms) => new Promise((r) => setTimeout(r, ms));
   return (
-    <section className="contact-sec section-padding position-re">
+    <section className="contact-sec section-padding-bottom position-re">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-12 col-md-10">

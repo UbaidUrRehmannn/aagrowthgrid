@@ -88,7 +88,7 @@ const Homepage = () => {
             {/* <CallToAction /> */}
           <SContactForm heading={"Let AA Growth Grid be your trusted partner in achieving success on Amazon."} description={"Contact us today to learn more about how we can help your brand thrive and excel in the ever-evolving world of e-commerce."}/>
           </div>
-          {/* <Blogs1 /> */}
+          <Blogs1 />
           <Footer />
         </div>
       </LightTheme>

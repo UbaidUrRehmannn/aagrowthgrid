@@ -1,6 +1,6 @@
 import * as fs from 'fs';
-// const filePath =  "src/data/contactformdata/contactformentries.json";
-const filePath =  "../../data/contactformdata/contactformentries.json";
+const filePath =  "src/data/contactformdata/contactformentries.json";
+// const filePath =  "../../data/contactformdata/contactformentries.json";
 
 const now = new Date();
 const formattedDate = now.toLocaleDateString("en-US", {

@@ -2,33 +2,22 @@
   {
     "id": 1,
     "icon": "pe-7s-smile",
-    "content": "Managed Brand.",
+    "content": "Managed Brand",
     "numberfront": "+",
-
-    "value": "50"
+    "value": "20"
   },
   {
     "id": 2,
     "icon": "pe-7s-portfolio",
     "content": "Under Management",
-    "numberfront": "M+",
-
-    "value": "150"
+    "numberfront": "+",
+    "value": "30"
   },
   {
     "id": 3,
     "icon": "pe-7s-medal",
-    "content": "Product Launches.",
+    "content": "Product  Launched",
     "numberfront": "+",
-
-    "value": "150"
-  },
-  {
-    "id": 4,
-    "icon": "pe-7s-medal",
-    "content": "Passionate People.",
-    "numberfront": "+",
-
-    "value": "30"
+    "value": "50"
   }
 ]

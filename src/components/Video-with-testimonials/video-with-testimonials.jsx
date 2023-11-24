@@ -20,7 +20,7 @@ const VideoWithTestimonials = () => {
     slidesToScroll: 1,
   };
   return (
-    <section className="block-sec">
+    <section className="block-sec section-padding-bottom">
       <div
         className="background bg-img pt-100 pb-0 parallaxie"
         style={{ backgroundImage: `url(/img/bg-vid.jpg)` }}

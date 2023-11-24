@@ -10,7 +10,7 @@ const Numbers = () => {
     console.clear();
   })
     return (
-      <section className="number-sec section-padding">
+      <section className="number-sec section-padding-bottom">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8 col-md-10">
@@ -26,7 +26,7 @@ const Numbers = () => {
           </div>
           <div className="row">
             {funFactDate.map((item) => (
-              <div key={item.id} className="col-md-3">
+              <div key={item.id} className="col-md-4">
                 <div className="item no-bord sm-mb50">
                   <span className={`icon ${item.icon}`}></span>
                   <h3 className="">
@@ -55,3 +55,10 @@ const Numbers = () => {
 }
 
 export default Numbers
+  // {
+  //   "id": 4,
+  //   "icon": "pe-7s-medal",
+  //   "content": "Passionate People.",
+  //   "numberfront": "+",
+  //   "value": "30"
+  // }

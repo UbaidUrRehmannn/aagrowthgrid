@@ -6,7 +6,7 @@ import cardsData from "../../data/sections/homepage-cards.json";
 const Cards = ({ style, lines }) => {
   return (
     <section
-      className={`services  bords section-padding ${
+      className={`services  bords section-padding-bottom ${
         style === "4item" ? "lficon" : lines ? "" : "pt-0"
       }`}
     >
