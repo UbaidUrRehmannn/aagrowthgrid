@@ -90,7 +90,7 @@ const IntroWithSlider = ({ sliderRef, data }) => {
                         <div className="caption center mt-30">
                           <h2 className="color-font text-capitalize">{slide.title}</h2>
                           {slide?.content && <p className="text-capitalize">{slide.content}</p>}
-                          <Link href="/about-us">
+                          <Link href="/contact">
                             <a className="butn bord curve mt-30">
                               <span>{slide.buttonText}</span>
                             </a>
