@@ -100,7 +100,9 @@ const WorksLight = () => {
         <div ref={MainContent} className="main-content">
           <CommunityServices data={communityFeaturesData} heading={'Join AA Growth Grid Community'} />
           <CommunityAboutSection AboutInfo1Data= {AboutInfo1Data}/>
-          {renderCards()}
+          <div className="section-padding-bottom">
+            {renderCards()}
+          </div>
           {/* <CommunityCardRightImage />
           <CommunityCardLeftImage /> */}
           {/* <CardRightImage />
