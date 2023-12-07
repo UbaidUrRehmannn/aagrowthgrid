@@ -18,6 +18,11 @@ import CommunityCardLeftImage from "../components/Community-Left-Image/community
 import CommunityAboutSection from "../components/Community-about-section/community-about-section"
 import AboutUs1DataRight from "../data/sections/Community/community-card-left-text.json";
 import AboutUs1DataLeft from "../data/sections/Community/community-card-right-text.json";
+import CommunityServices from "../components/Community-services/CommunityServices";
+import communityFeaturesData from "../data/sections/communityServices.json";
+import AboutInfo1Data from "../data/sections/Community/community-about-section.json";
+
+
 
 
 const WorksLight = () => {
@@ -93,7 +98,8 @@ const WorksLight = () => {
         <Navbar nr={navbarRef} lr={logoRef} />
         <IntroWithSlider sliderRef={fixedSlider} data={Communityintro} />
         <div ref={MainContent} className="main-content">
-          <CommunityAboutSection />
+          <CommunityServices data={communityFeaturesData} heading={'Join AA Growth Grid Community'} />
+          <CommunityAboutSection AboutInfo1Data= {AboutInfo1Data}/>
           {renderCards()}
           {/* <CommunityCardRightImage />
           <CommunityCardLeftImage /> */}

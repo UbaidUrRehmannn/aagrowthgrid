@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "icon": "pe-7s-headphones",
+    "image": "/img/service-2.svg",
+    "title": "Unlimited Support",
+    "content1": "Our team of Amazon experts is here to support you, offering unlimited answers to your Amazon-related inquiries as a seller. With our guidance, every move you make on Amazon is expert-backed and geared towards profitability."
+  },
+  {
+    "id": 2,
+    "icon": "pe-7s-copy-file",
+    "image": "/img/service-2.svg",
+    "title": "Training Resources",
+    "content1": "Get unrestricted access to our extensive library of marcos, sheets, templates, SOPs (Standard Operating Procedures), and training videos to sharpen your Amazon-selling skills."
+  },
+  {
+    "id": 3,
+    "image": "/img/service-2.svg",
+    "icon": "pe-7s-diamond",
+    "title": "Expert Assistance",
+    "content1": "Tap into our network of carefully vetted experts across various categories, including sourcing, inspections, PPC (Pay-Per-Click), DSP (Demand Side Platform), listing images, and more. Get the guidance you need to excel on Amazon."
+  },
+  {
+    "id": 4,
+    "icon": "pe-7s-cloud-download",
+    "image": "/img/service-2.svg",
+    "title": "Amazon Updates",
+    "content1": "Our experience and insights gained from diverse brand partnerships ensure that we remain at the forefront of all-things-Amazon. Through continuous testing and innovation, we keep you informed, enabling you to excel in your Amazon endeavors."
+  }
+]

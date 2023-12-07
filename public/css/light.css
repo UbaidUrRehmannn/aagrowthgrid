@@ -9353,3 +9353,16 @@ section.next-prog.section-padding {
     line-height: 30px;
   }
 }
+/* Community Page CSS Starts */
+.community-services-item-box {
+  padding: 30px 10px !important;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  height: 100%;
+}
+.community-services-item-box:hover {
+  /* background-color: #f7f7f7; */
+  box-shadow: 0px 20px 30px 0px #c1c3c4;
+}
+/* Community Page CSS Ends */
