@@ -100,7 +100,8 @@ const WorksLight = () => {
         <div ref={MainContent} className="main-content">
           <CommunityServices data={communityFeaturesData} heading={'Join AA Growth Grid Community'} />
           <CommunityAboutSection AboutInfo1Data= {AboutInfo1Data}/>
-          <div className="section-padding-bottom">
+          <VideoWithTestimonials />
+          <div className="section-padding">
             {renderCards()}
           </div>
           {/* <CommunityCardRightImage />
@@ -109,7 +110,6 @@ const WorksLight = () => {
           <TextImageBanner {...TextImageBannerData}/>
           <HomeServices data={ServicesFeaturesData} heading={ "Wether you are a Brand or a Third Party Seller, you got you covered with our services"}/>
           <HomeServices data={ServicesFeaturesDataTwo} heading={"Why Choose AA Growth Grid?"}/> */}
-          <VideoWithTestimonials />
           <div style={{ marginTop: "4rem" }}>
           <SContactForm heading={"Let AA Growth Grid be your trusted partner in achieving success on Amazon."} description={"Contact us today to learn more about how we can help your brand thrive and excel in the ever-evolving world of e-commerce."}/>
           </div>

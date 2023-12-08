@@ -9365,4 +9365,8 @@ section.next-prog.section-padding {
   /* background-color: #f7f7f7; */
   box-shadow: 0px 20px 30px 0px #c1c3c4;
 }
+.community-card-image-padding {
+  padding-left: 50px !important;
+    padding-right: 50px !important;
+}
 /* Community Page CSS Ends */

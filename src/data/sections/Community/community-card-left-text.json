@@ -1,23 +1,30 @@
 [
   {
     "id": 1,
-    "title": "UNLIMITED SUPPORT",
-    "paragraphOne": "Our team of Amazon experts is here to support you, offering unlimited answers to your Amazon-related inquiries as a seller. With our guidance, every move you make on Amazon is expert-backed and geared towards profitability.",
-    "image": "/img/about-us.jpg",
+    "title": "Introduction to Amazon PPC",
+    "paragraphOne": "Master Amazon's pay-per-click (PPC) advertising platform to expand your customer reach and supercharge your sales.",
+    "image": "/img/community/community-right-1.png",
     "altText": ""
   },
   {
     "id": 2,
-    "title": "Amazon",
-    "paragraphOne": "ok",
-    "image": "/img/about-us.jpg",
+    "title": "Targeting & Match Types",
+    "paragraphOne": "Optimize your advertising by selecting the appropriate targeting options and match types to reach potential customers with precision.",
+    "image": "/img/community/community-right-2.png",
     "altText": ""
   },
   {
     "id": 3,
-    "title": "Amazon",
-    "paragraphOne": "ok",
-    "image": "/img/about-us.jpg",
+    "title": "Reports & Optimization",
+    "paragraphOne": "Track your campaign performance and make data-driven adjustments to maximize your return on investment (ROI).",
+    "image": "/img/community/community-right-3.png",
+    "altText": ""
+  },
+  {
+    "id": 4,
+    "title": "Demand Side Platform (DPS)",
+    "paragraphOne": "Automate your Amazon PPC campaigns and make the most of your advertising budget with a Demand Side Platform.",
+    "image": "/img/community/community-right-4.png",
     "altText": ""
   }
 ]

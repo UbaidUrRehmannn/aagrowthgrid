@@ -61,7 +61,7 @@ const CommunityCardLeftImage = ({ data }) => {
     <section className="about-us pt-25">
       <div className="container">
         <div className="row">
-        <div className="col-lg-5 img p-0">
+        <div className="col-lg-3 img community-card-image-padding">
             <img src={data.image} alt={data.altText} />
             {/* Render status items if needed */}
             {/* {data.stauts && (
@@ -78,12 +78,12 @@ const CommunityCardLeftImage = ({ data }) => {
               </div>
             )} */}
           </div>
-          <div className="col-lg-7 valign md-mb50">
-            <div className="mb-50">
+          <div className="col-lg-9 valign md-mb50">
+            <div className="mb-25">
               {/* <h6 className="fw-100 text-u ls10 mb-10">
                 {data.smallTitle}
               </h6> */}
-              <h3 className="fw-600 text-u ls1 mb-30 ">
+              <h3 className="fw-600 text-u ls1 mb-10 ">
               {data.title}
               </h3>
               <div className="text">

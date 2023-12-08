@@ -1,23 +1,30 @@
 [
   {
     "id": 1,
-    "title": "TRAINING RESOURCES",
-    "paragraphOne": "Get unrestricted access to our extensive library of marcos, sheets, templates, SOPs (Standard Operating Procedures), and training videos to sharpen your Amazon-selling skills.",
-    "image": "/img/about-us.jpg",
+    "title": "Understanding Campaigns",
+    "paragraphOne": "Create and effectively manage Amazon PPC campaigns that target the right audience and deliver profitable results and campaigns built for scale.",
+    "image": "/img/community/community-right-1.png",
     "altText": ""
   },
   {
     "id": 2,
-    "title": "Amazon",
-    "paragraphOne": "ok",
-    "image": "/img/about-us.jpg",
+    "title": "Research & Product Ranking",
+    "paragraphOne": "Gain insights into Amazon's product ranking algorithm and leverage this knowledge to boost your product's visibility.",
+    "image": "/img/community/community-right-2.png",
     "altText": ""
   },
   {
     "id": 3,
-    "title": "Amazon",
-    "paragraphOne": "ok",
-    "image": "/img/about-us.jpg",
+    "title": "Analytics & Data Interpretation",
+    "paragraphOne": "Harness Amazon's data to gain valuable customer insights and make informed marketing decisions.",
+    "image": "/img/community/community-right-3.png",
+    "altText": ""
+  },
+  {
+    "id": 4,
+    "title": "Community Support",
+    "paragraphOne": "Join forces with like-minded entrepreneurs and expert allies for comprehensive support and collective growth.",
+    "image": "/img/community/community-right-4.png",
     "altText": ""
   }
 ]
