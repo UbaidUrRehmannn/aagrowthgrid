@@ -26,7 +26,7 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-      <div className="mt-4 about-background-image d-flex align-items-center height-36">
+      <div className="mt-4 about-background-image d-flex align-items-center height-28">
         <div className="container">
           <div className="row px-5 text">
             <div className="col-lg-12 col-md-12 mb-4">
@@ -38,7 +38,7 @@ const AboutSection = () => {
               <div className="text">
                 <Split>
                   <p className="wow txt mb-10 words chars splitting text-white text-center" data-splitting >
-                  Our journey began in 2018, driven by a mission to turn brands&apos; Amazon Wholesale aspirations into tangible victories. With a track record of nurturing 50+ brands to unparalleled success, we&apos;re not just consultants – we&apos;re your strategic partners, your Amazon architects, and your guides to unparalleled growth.
+                  Our journey began in 2018, driven by a mission to turn Amazon brands aspirations into tangible victories. With a track record of nurturing 50+ brands to unparalleled success, we&apos;re not just consultants – we&apos;re your strategic partners, your Amazon architects, and your guides to unparalleled growth.
                   </p>
                   {/* <p className="wow txt words chars splitting" data-splitting>
                     {AboutInfo1Data.paragraph2}

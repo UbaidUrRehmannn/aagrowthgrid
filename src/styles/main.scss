@@ -152,7 +152,7 @@ li.dedication::before {
   content: "";
   width: 500px;
   height: 75px;
-  background-image: url(../../public//img/about-us/DEDICATION.svg);
+  background-image: url(../../public/img/about-us/DEDICATION.svg);
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -161,12 +161,31 @@ li.dedication::before {
 }
 
 .about-background-image {
-  background-image: url(../../public//img/about-us/about-background.webp);
+  background-image: url(../../public/img/about-us/about-background-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
   position: relative;
 }
 .about-background-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity here */
+  z-index: 1; /* Ensure the overlay appears above the background image */
+  pointer-events: none; /* Allow clicks to pass through the overlay to content below */
+}
+.about-background-image-2 {
+  background-image: url(../../public/img/about-us/about-background-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+.about-background-image-2::after {
   content: "";
   position: absolute;
   top: 0;

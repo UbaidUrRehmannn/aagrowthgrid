@@ -5,8 +5,8 @@ import Split from "../Split";
 
 const TextImageBanner = ( data ) => {
   return (
-    <section className="about-us section-padding-bottom">
-      <div className="mt-4 about-background-image d-flex align-items-center height-36 mt-70">
+    <section className="about-us">
+      <div className="mt-4 about-background-image-2 d-flex align-items-center height-28 mt-70">
         <div className="container">
           <div className="row px-5 text">
             <div className="col-lg-12 col-md-12 mb-4">

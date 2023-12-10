@@ -1,5 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar/navbar";
+import VideoBackground from "../components/video-background/video-background";
+import ServicesVideoSection from "../data/sections/servicesintroVideo.json";
 import Head from "next/head";
 import IntroWithSlider from "../components/Intro-with-slider/intro-with-slider";
 import AboutUs from "../components/About-us/about-us";
@@ -62,17 +64,20 @@ const Homepage = () => {
       </Head>
       <LightTheme>
         <Navbar nr={navbarRef} lr={logoRef} />
-        <IntroWithSlider sliderRef={fixedSlider} data={servicesIntroData} />
+        <VideoBackground sliderRef={fixedSlider} data={ServicesVideoSection}/>
+        {/* <IntroWithSlider sliderRef={fixedSlider} data={servicesIntroData} /> */}
         <div ref={MainContent} className="main-content">
           {/* <AboutUs /> */}
           <CardRightImage />
           <TextImageBanner {...TextImageBannerData}/>
-          <HomeServices
-            data={ServicesFeaturesData}
-            heading={
-              "Wether you are a Brand or a Third Party Seller, you got you covered with our services"
-            }
-          />
+          <div className="section-padding">
+            <HomeServices
+              data={ServicesFeaturesData}
+              heading={
+                "Wether you are a Brand or a Third Party Seller, you got you covered with our services"
+              }
+              />
+          </div>
           <HomeServices
             data={ServicesFeaturesDataTwo}
             heading={"Why Choose AA Growth Grid?"}

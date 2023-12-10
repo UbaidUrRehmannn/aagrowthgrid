@@ -9,12 +9,12 @@ const ImageRight = () => {
     <section className="about-us section-padding-top">
       <div className="container">
         <div className="row">
-          <div className="col-lg-7 valign md-mb50">
-            <div className="mb-50">
+          <div className="col-lg-12 valign md-mb50">
+            <div className="">
               {/* <h6 className="fw-100 text-u ls10 mb-10">
                 {AboutUs1Date.smallTitle}
               </h6> */}
-              <h3 className="fw-600 text-u ls1 mb-30 ">
+              <h3 className="fw-600 text-center text-u ls1 mb-15 ">
               ✨ A Symphony of Strategy and Expertise
               </h3>
               <div className="text">
@@ -32,44 +32,22 @@ const ImageRight = () => {
               </Link> */}
             </div>
           </div>
-          <div className="col-lg-5 img p-0">
+          {/* <div className="col-lg-5 img p-0">
             <img src={AboutUs1Date.image} alt="" />
-            {/* <div className="stauts">
-              {AboutUs1Date.stauts.map((item) => (
-                <div className="item" key={item.id}>
-                  <h4>
-                    {item.number}
-                    <span>{item.letter}</span>
-                  </h4>
-                  <h6>{item.stautsName}</h6>
-                </div>
-              ))}
-            </div> */}
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="container">
         <div className="row mt-70">
-        <div className="col-lg-5 img p-0">
+        {/* <div className="col-lg-5 img p-0">
             <img src={AboutUs1Date.image} alt="" />
-            {/* <div className="stauts">
-              {AboutUs1Date.stauts.map((item) => (
-                <div className="item" key={item.id}>
-                  <h4>
-                    {item.number}
-                    <span>{item.letter}</span>
-                  </h4>
-                  <h6>{item.stautsName}</h6>
-                </div>
-              ))}
-            </div> */}
-          </div>
-          <div className="col-lg-7 valign md-mb50">
-            <div className="mb-50">
+          </div> */}
+          <div className="col-lg-12 valign md-mb50">
+            <div className="">
               {/* <h6 className="fw-100 text-u ls10 mb-10">
                 {AboutUs1Date.smallTitle}
               </h6> */}
-              <h3 className="fw-600 text-u ls1 mb-30 ">
+              <h3 className="fw-600 text-center text-u ls1 mb-15 ">
               🌐 From Struggle to Stardom
               </h3>
               <div className="text">
@@ -91,12 +69,12 @@ const ImageRight = () => {
       </div>
       <div className="container">
         <div className="row mt-70">
-          <div className="col-lg-7 valign md-mb50">
-            <div className="mb-50">
+          <div className="col-lg-12 valign md-mb50">
+            <div className="">
               {/* <h6 className="fw-100 text-u ls10 mb-10">
                 {AboutUs1Date.smallTitle}
               </h6> */}
-              <h3 className="fw-600 text-u ls1 mb-30 ">
+              <h3 className="fw-600 text-center text-u ls1 mb-15 ">
               📈 Strategizing Your Success
               </h3>
               <div className="text">
@@ -114,20 +92,9 @@ const ImageRight = () => {
               </Link> */}
             </div>
           </div>
-          <div className="col-lg-5 img p-0">
+          {/* <div className="col-lg-5 img p-0">
             <img src={AboutUs1Date.image} alt="" />
-            {/* <div className="stauts">
-              {AboutUs1Date.stauts.map((item) => (
-                <div className="item" key={item.id}>
-                  <h4>
-                    {item.number}
-                    <span>{item.letter}</span>
-                  </h4>
-                  <h6>{item.stautsName}</h6>
-                </div>
-              ))}
-            </div> */}
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

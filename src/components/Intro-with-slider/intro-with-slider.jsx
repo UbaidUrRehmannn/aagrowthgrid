@@ -121,17 +121,8 @@ const IntroWithSlider = ({ sliderRef, data }) => {
         <div ref={paginationRef} className="swiper-pagination top botm"></div>
 
         <div className="social-icon">
-          <a href="#0">
-            <i className="fab fa-facebook-f"></i>
-          </a>
-          <a href="#0">
-            <i className="fab fa-twitter"></i>
-          </a>
-          <a href="#0">
-            <i className="fab fa-behance"></i>
-          </a>
-          <a href="#0">
-            <i className="fab fa-pinterest-p"></i>
+          <a target="_blank" href="https://www.linkedin.com/company/aa-growth-grid/about/?viewAsMember=true">
+            <i className="fab fa-linkedin"></i>
           </a>
         </div>
       </div>

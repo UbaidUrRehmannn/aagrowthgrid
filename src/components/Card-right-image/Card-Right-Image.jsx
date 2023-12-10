@@ -6,7 +6,7 @@ import ServicesCardRightImageData from "../../data/sections/ServicesCardRightIma
 
 const CardRightImage = () => {
   return (
-    <section className="about-us section-padding">
+    <section className="about-us section-padding-top">
       <div className="container">
         <div className="row">
           <div className="col-lg-5 valign md-mb50">
