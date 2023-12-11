@@ -71,7 +71,7 @@ const Homepage = () => {
         {/* <IntroWithSlider sliderRef={fixedSlider} /> */}
         <VideoBackground sliderRef={fixedSlider} data={HomeVideoSection}/>
         <div ref={MainContent} className="main-content">
-          <Cards />
+          {/* <Cards /> */}
           <AboutUs />
           <Numbers />
           <HomeServices data={homeFeaturesData} heading={'Why Choose AA Growth Grid?'} />
