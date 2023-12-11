@@ -73,9 +73,9 @@ const VideoBackground = ({ data, sliderRef }) => {
                     Your browser does not support the video tag.
                   </video>
                   <div className="overlay height-700 "></div>
-                  <div className="container height-700 d-flex align-items-center">
+                  <div className="container height-700 d-flex align-items-center justify-content-center">
                     <div className="row justify-content-center">
-                      <div className="col-lg-8 col-md-10">
+                      <div className="col-lg-12 col-md-10">
                         <div className="caption center mt-30">
                           <h2 className="color-font text-capitalize">{slide.title}</h2>
                           {slide?.content && <p className="text-capitalize">{slide.content}</p>}

@@ -121,7 +121,7 @@ const IntroWithSlider = ({ sliderRef, data }) => {
         <div ref={paginationRef} className="swiper-pagination top botm"></div>
 
         <div className="social-icon">
-          <a target="_blank" href="https://www.linkedin.com/company/aa-growth-grid/about/?viewAsMember=true">
+          <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/aa-growth-grid/about/?viewAsMember=true">
             <i className="fab fa-linkedin"></i>
           </a>
         </div>

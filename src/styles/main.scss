@@ -319,6 +319,7 @@ li.dedication::before {
 }
 
 .login-box .user-box input:focus ~ label,
+// .login-box .user-box input:invalid ~ label,
 .login-box .user-box input:valid ~ label {
   top: -30px;
   left: 0;

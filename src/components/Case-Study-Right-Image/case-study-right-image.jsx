@@ -3,6 +3,7 @@ import React from "react";
 import cardMouseEffect from "../../common/cardMouseEffect";
 import Link from "next/link";
 import { thumparallaxDown } from "../../common/thumparallax";
+import casestudyfile2 from "../../../public/Portfolio-2.pdf"
 
 const CaseStudyRightImage = () => {
   React.useEffect(() => {
@@ -53,7 +54,7 @@ const CaseStudyRightImage = () => {
             <div className="img bottom-padding-less-img">
               <img
                 className="thumparallax-down"
-                src="/img/about-us/about-section.webp"
+                src="/img/casestudies/casestudy-2.jpg"
                 alt=""
               />
             </div>
@@ -65,7 +66,13 @@ const CaseStudyRightImage = () => {
           <div className="col-lg-2"></div>
           <div className="col-lg-8 text-center mb-60">
           <Link href="/about-us">
-            <a className="butn bord curve mt-30">
+            <a 
+              className="butn bord curve mt-30"
+              target="_blank"
+              rel="noreferrer"
+              href={casestudyfile2}
+              download={"Portfolio-2.pdf"}
+            >
               <span> Download Case Study</span>
             </a>
           </Link>

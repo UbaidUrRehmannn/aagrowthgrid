@@ -15,6 +15,8 @@ import TextImageBanner from "../components/text-on-image/text-on-image";
 import TextImageBannerData from "../data/sections/services-text-on-image.json";
 import CaseStudyLeftImage from "../components/Case-Study-Left-Image/case-study-left-image"
 import CaseStudyRightImage from "../components/Case-Study-Right-Image/case-study-right-image"
+import CaseStudiesVideoSection from "../data/sections/casestudiesintroVideo.json";
+import VideoBackground from "../components/video-background/video-background";
 
 const WorksLight = () => {
   const fixedSlider = React.useRef(null);
@@ -70,7 +72,9 @@ const WorksLight = () => {
     // </LightTheme>
       <LightTheme>
         <Navbar nr={navbarRef} lr={logoRef} />
-        <IntroWithSlider sliderRef={fixedSlider} data={CaseStudiesIntro} />
+        <VideoBackground sliderRef={fixedSlider} data={CaseStudiesVideoSection}/>
+
+        {/* <IntroWithSlider sliderRef={fixedSlider} data={CaseStudiesIntro} /> */}
         <div ref={MainContent} className="main-content">
           <CaseStudyLeftImage />
           <CaseStudyRightImage />

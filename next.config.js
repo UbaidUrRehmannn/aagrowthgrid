@@ -1,6 +1,31 @@
 const path = require("path");
 
 module.exports = {
+  webpack: (config, options) => {
+    config.module.rules.push({
+      test: /\.pdf/,
+      type: "asset/resource",
+      generator: {
+        filename: 'static/[name]-[hash].[ext]',
+      },
+    });
+    return config;
+  },
+  // webpack: (config, options) => {
+  //   config.module.rules.push({
+  //     test: /\.pdf$/,
+  //     use: [
+  //       {
+  //         loader: 'file-loader',
+  //         options: {
+  //           name: 'static/[name]-[hash].[ext]', // Use a hash to make filenames unique
+  //         },
+  //       },
+  //     ],
+  //   });
+
+  //   return config;
+  // },
   reactStrictMode: true,
   // output: 'export',
   // // Optional: Change the output directory `out` -> `dist`
