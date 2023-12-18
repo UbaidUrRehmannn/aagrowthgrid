@@ -122,7 +122,7 @@ const Footer = ({ hideBGCOLOR }) => {
                 <img src={appData.lightLogo} alt="" />
               </div>
               <div className="copy-right">
-                <p>We're not just consultants; we're your brand's voice, strategy, and growth catalyst.</p>
+                <p>We&apos;re not just consultants; we&apos;re your brand&apos;s voice, strategy, and growth catalyst.</p>
               </div>
               <div className="social">
                 <a
