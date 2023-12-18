@@ -486,3 +486,8 @@ li.dedication::before {
 // .logo-width {
 //   width: 25% !important;
 // }
+.background-gradient {
+  // background: rgb(255,178,108);
+background: linear-gradient(29deg, rgba(255,178,108,1) 0%, rgba(255,125,118,1) 38%, rgba(6,167,255,1) 100%);
+
+}

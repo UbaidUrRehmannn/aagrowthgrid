@@ -54,7 +54,7 @@ const Footer = ({ hideBGCOLOR }) => {
             </div>
           </div>
           <div className="col-lg-4">
-            <div className="item md-mb50">
+            {/* <div className="item md-mb50">
               <div className="title">
                 <h5>Recent News</h5>
               </div>
@@ -114,7 +114,7 @@ const Footer = ({ hideBGCOLOR }) => {
                   </div>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
           <div className="col-lg-4">
             <div className="item">
@@ -122,13 +122,16 @@ const Footer = ({ hideBGCOLOR }) => {
                 <img src={appData.lightLogo} alt="" />
               </div>
               <div className="copy-right">
-                <p>AA Growth Grid Short description</p>
+                <p>We're not just consultants; we're your brand's voice, strategy, and growth catalyst.</p>
               </div>
               <div className="social">
-                <a href="#0">
-                  <i className="fab fa-facebook-f"></i>
+                <a
+                  target="_blank"
+                  rel="noreferrer" 
+                  href="https://www.linkedin.com/company/aa-growth-grid/about/?viewAsMember=true">
+                  <i className="fab fa-linkedin"></i>
                 </a>
-                <a href="#0">
+                {/* <a href="#0">
                   <i className="fab fa-twitter"></i>
                 </a>
                 <a href="#0">
@@ -136,7 +139,7 @@ const Footer = ({ hideBGCOLOR }) => {
                 </a>
                 <a href="#0">
                   <i className="fab fa-youtube"></i>
-                </a>
+                </a> */}
               </div>
               <div className="copy-right">
                 <p>

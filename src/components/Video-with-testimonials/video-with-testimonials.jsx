@@ -22,8 +22,8 @@ const VideoWithTestimonials = () => {
   return (
     <section className="block-sec section-padding-bottom">
       <div
-        className="background bg-img pt-100 pb-0 parallaxie"
-        style={{ backgroundImage: `url(/img/bg-vid.jpg)` }}
+        className="background background-gradient bg-img pt-100 pb-0 parallaxie"
+        // style={{ backgroundImage: `url(/img/bg-vid.jpg)`, background: linear-gradient(to left, #29b3fe, #ff4c43, #f57706)}}
         data-overlay-dark="5"
       >
         <div className="container">
@@ -63,7 +63,7 @@ const VideoWithTestimonials = () => {
                     Our Clients
                   </h6>
                   <h4 className="wow fadeInLeft" data-wow-delay=".5s">
-                    What Client&apos;s Say?
+                    What Our Client&apos;s Say?
                   </h4>
                 </div>
                 <Slider
@@ -73,10 +73,7 @@ const VideoWithTestimonials = () => {
                 >
                   <div className="item">
                     <p>
-                      The greatest benefit I have seen so far since working with
-                      AA Growth Grid; I have freed up a lot of my time so I can
-                      focus on the parts of my business that need my direct
-                      attention, which will enable growth.
+                    AA Grwth Grid expert guidance helped me create a unique brand, and their strategies significantly boosted my sales. Achieving my sales goals was easier than ever with their dedicated support.
                     </p>
                     <div className="info">
                       <div className="img">
@@ -96,10 +93,7 @@ const VideoWithTestimonials = () => {
                   </div>
                   <div className="item">
                     <p>
-                      I found them very helpful, professional and hard working.
-                      I would recommend them to anyone that needs some push in
-                      the right direction… or if you need some time off and want
-                      to leave your account in good hands.
+                      AA Growth Grid team provided valuable insights, enabling me to launch and grow my brand successfully on Amazon. I appreciated their focus on achieving high ROI, and the results exceeded my expectations.
                     </p>
                     <div className="info">
                       <div className="img">
@@ -117,10 +111,7 @@ const VideoWithTestimonials = () => {
                   </div>
                   <div className="item">
                     <p>
-                      I am very impressed with Urtasker. They have helped me
-                      grow my business in a very short time with PPC campaigns
-                      and listing optimization. The prices are very reasonable
-                      for knowledge they have on Amazon.
+                    AA Growth Grid personalized approach and attention to detail helped me optimize ACOS and TACOS, resulting in a profitable and sustainable business model. Highly recommended!
                     </p>
                     <div className="info">
                       <div className="img">

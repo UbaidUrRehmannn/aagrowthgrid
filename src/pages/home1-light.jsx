@@ -84,11 +84,11 @@ const Homepage = () => {
           <Clients theme="light" />
 
           </div> */}
-          <div style={{ marginTop: "4rem" }}>
+          <div style={{ marginTop: "6rem" }}>
             {/* <CallToAction /> */}
           <SContactForm heading={"Let AA Growth Grid be your trusted partner in achieving success on Amazon."} description={"Contact us today to learn more about how we can help your brand thrive and excel in the ever-evolving world of e-commerce."}/>
           </div>
-          <Blogs1 />
+          {/* <Blogs1 /> */}
           <Footer />
         </div>
       </LightTheme>
