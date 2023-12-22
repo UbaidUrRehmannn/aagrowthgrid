@@ -17,6 +17,10 @@ const formattedTime = now.toLocaleTimeString("en-US", {
 const formattedTimestamp = `${formattedDate} ${formattedTime}`;
 
 export default async function handler(req, res) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Headers', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE, OPTIONS');
+  
   if (req.method === 'POST') {
       // let data = await fs.promises.readdir('src/data/contactformdata');
       // console.log("data: ", data);
@@ -30,7 +34,8 @@ export default async function handler(req, res) {
       data.push(newRecord);
       fs.writeFileSync(filePath, JSON.stringify(data));
       res.status(200).json("Data Submited Successfully");
-  } else if (req.method === 'GET') {
+  } 
+  else if (req.method === 'GET') {
     const data = JSON.parse(fs.readFileSync(filePath, "utf-8"));
     res.status(200).json(data);
   }
