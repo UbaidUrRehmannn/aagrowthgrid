@@ -23,6 +23,7 @@ import homeFeaturesData from "../data/sections/homeServices.json";
 import SContactForm from "../components/s-contact-form/s-contact-form";
 
 const Homepage = () => {
+
   const fixedSlider = React.useRef(null);
   const MainContent = React.useRef(null);
   const navbarRef = React.useRef(null);

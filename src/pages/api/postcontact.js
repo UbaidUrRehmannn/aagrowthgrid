@@ -20,7 +20,7 @@ export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Headers', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE, OPTIONS');
-  
+
   if (req.method === 'POST') {
       // let data = await fs.promises.readdir('src/data/contactformdata');
       // console.log("data: ", data);

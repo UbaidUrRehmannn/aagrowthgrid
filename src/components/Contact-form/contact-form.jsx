@@ -40,7 +40,8 @@ const ContactForm = () => {
   }
 
   async function postJSON(data) {
-    const response = await fetch("/api/postcontact", {
+    // const response = await fetch("/api/postcontact", {
+    const response = await fetch(`https://www.aagrowthgrid.com`+`/api/postcontact`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
