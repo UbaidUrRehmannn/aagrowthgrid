@@ -21,7 +21,7 @@ export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Headers', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE, OPTIONS');
 
-  if (req.method === 'POST') {
+  if (req.method === 'PUT') {
       // let data = await fs.promises.readdir('src/data/contactformdata');
       // console.log("data: ", data);
       const data = JSON.parse(fs.readFileSync(filePath, "utf-8"));
@@ -35,8 +35,8 @@ export default async function handler(req, res) {
       fs.writeFileSync(filePath, JSON.stringify(data));
       res.status(200).json("Data Submited Successfully");
   } 
-  else if (req.method === 'GET') {
-    const data = JSON.parse(fs.readFileSync(filePath, "utf-8"));
-    res.status(200).json(data);
-  }
+  // else if (req.method === 'GET') {
+  //   const data = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+  //   res.status(200).json(data);
+  // }
 }
